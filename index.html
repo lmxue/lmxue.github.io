@@ -1,1 +1,154 @@
-Hello world.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Building a mixed-lingual neural TTS system with only monolingual data</title>
+</head>
+<body>
+
+<h2 align="center"> Audio samples for "Building a mixed-lingual neural TTS system with only monolingual data"</h2>
+<div><b>Authors:</b> Liumeng Xue, Wei Song, Guanghui Xu,  Lei Xie, Zhizheng Wu</div>
+<div><b>Abstract:</b> This paper investigates the problem of building a mixed-lingual text-to-speech （TTS） system when only monolingual data is available, which is a typical problem when deploying Chinese neural TTS, specifically the encoder-decoder-based one. The mixed lingual here is Mandarin Chinese with embedded English phrases or words. We investigate the problem from two aspects: speaker similarity and intelligibility.  We make use of multi-speaker's monolingual data, i.e. Mandarin data and English data, to build a base model, which is expected to construct Mandarin and English language space and speaker space. We study the use of speaker embedding to make speaker similarity consistent across languages, analyze phoneme embedding and encoder output representations between two languages, and investigate the choice of modeling training. We report the findings and the challenges for building a mixed-lingual TTS with monolingual data within the encoder-decoder framework.</div>
+<!--
+<blockquote>
+<table>
+<tr><td><img src="figures/mos.png" width=500></td></tr>
+<tr><td align=center>Figure 1. MOS values of different systems</td></tr>
+</table>
+</blockquote>
+--> 
+<h4>1. MT-SE-DEC-CON vs MT-SE-DEC-RE S <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder and an addition phoneme embedding context vector vs The multi-speaker and target speaker model with speaker embedding at decoder with the residual encoder</h4>
+<!--
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder and an addition phoneme embedding context vector <br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vs <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder with the residual encoder <br> 
+--> 
+
+<blockquote>
+<table>
+<tr><td colspan=2><span>1.1. Lemonade和随后的“formation世界巡回演唱会。</span></td></tr>
+<tr><td width="200">Natural:</td><td><audio controls><source src="samples/natural/mix/200100.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200100.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200100.wav"></audio></td></tr>
+<tr><td colspan=2><span>1.2. Love herby流花的灵动之美也更添情趣此外。.</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200106.wav"></audio></td></tr>
+<tr><td colspan=2><span>1.3. 八月“we young等活动。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200246.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200246.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200246.wav"></audio></td></tr>
+<tr><td colspan=2><span>1.4 Chanel与tiffany已先后试水网络快闪店。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200388.wav"></audio></td></tr>
+<tr><td colspan=2><span>1.5 Downie的才华才得到了michele的进一步赏识。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200478.wav"></audio></td></tr>
+</table>
+</blockquote>
+
+<h4>2. MT-SE-DEC vs MT-SE-DEC-RES <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder  vs The multi-speaker and target speaker model with speaker embedding at decoder with the residual encoder
+<!--
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder <br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vs <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder with the residual encoder:<br>  
+--> 
+ </h4>
+<blockquote>
+<table>
+<tr><td colspan=2><span>2.1. Lemonade和随后的“formation世界巡回演唱会。</span></td></tr>
+<tr><td width="200">Natural:</td><td><audio controls><source src="samples/natural/mix/200100.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200100.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200100.wav"></audio></td></tr>
+<tr><td colspan=2><span>2.2. Love herby流花的灵动之美也更添情趣此外。.</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200106.wav"></audio></td></tr>
+<tr><td colspan=2><span>1.3. 八月“we young等活动。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200246.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200246.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200246.wav"></audio></td></tr>
+<tr><td colspan=2><span>1.4 Chanel与tiffany已先后试水网络快闪店。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200388.wav"></audio></td></tr>
+<tr><td colspan=2><span>2.5 Downie的才华才得到了michele的进一步赏识。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-RES-:</td><td><audio controls><source src="samples/MT-SE-DEC-RES/mix/200478.wav"></audio></td></tr>
+</table>
+</blockquote>
+
+<h4>3. MT-SE-DEC vs MT-SE-DEC-CON <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder vs The multi-speaker and target speaker model with speaker embedding at decoder and an addition phoneme embedding context vector
+<!--
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder  <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vs <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder and an addition phoneme embedding context vector <br>  
+--> 
+</h4>
+<blockquote>
+<table>
+<tr><td colspan=2><span>3.1. Lemonade和随后的“formation世界巡回演唱会。</span></td></tr>
+<tr><td width="200">Natural:</td><td><audio controls><source src="samples/natural/mix/200100.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200100.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200100.wav"></audio></td></tr>
+<tr><td colspan=2><span>2.2. Love herby流花的灵动之美也更添情趣此外。.</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-CON-RES:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200106.wav"></audio></td></tr>
+<tr><td colspan=2><span>3.3. 八月“we young等活动。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200246.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200246.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200246.wav"></audio></td></tr>
+<tr><td colspan=2><span>3.4 Chanel与tiffany已先后试水网络快闪店。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200388.wav"></audio></td></tr>
+<tr><td colspan=2><span>3.5 Downie的才华才得到了michele的进一步赏识。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC-CON:</td><td><audio controls><source src="samples/MT-SE-DEC-CON/mix/200478.wav"></audio></td></tr>
+</table>
+</blockquote>
+
+<h4>4. MT-SE-ENC vs MT-SE-DEC <br>  
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at encoder vs The multi-speaker and target speaker model with speaker embedding at decoder
+<!--
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at encoder  <br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vs <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;The multi-speaker and target speaker model with speaker embedding at decoder: <br>  
+--> 
+ </h4>
+<blockquote>
+<table>
+<tr><td colspan=2><span>4.1. Evolve这张专辑让imagine dragons在自省中实现突破。</span></td></tr>
+<tr><td width="200">Natural:</td><td><audio controls><source src="samples/natural/mix/200072.wav"></audio></td></tr>
+<tr><td>MT-SE-ENC:</td><td><audio controls><source src="samples/MT-SE-ENC/mix/200072.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200072.wav"></audio></td></tr>
+<tr><td colspan=2><span>4.2. Love herby流花的灵动之美也更添情趣此外。.</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-ENC:</td><td><audio controls><source src="samples/MT-SE-ENC/mix/200106.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200106.wav"></audio></td></tr>
+<tr><td colspan=2><span>4.3. Anyway接待说你可以walk in进来。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200290.wav"></audio></td></tr>
+<tr><td>MT-SE-ENC:</td><td><audio controls><source src="samples/MT-SE-ENC/mix/200290.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200290.wav"></audio></td></tr>
+<tr><td colspan=2><span>4.4 Chanel与tiffany已先后试水网络快闪店。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-ENC:</td><td><audio controls><source src="samples/MT-SE-ENC/mix/200388.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200388.wav"></audio></td></tr>
+<tr><td colspan=2><span>4.5 Downie的才华才得到了michele的进一步赏识。</span></td></tr>
+<tr><td>Natural:</td><td><audio controls><source src="samples/natural/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-ENC:</td><td><audio controls><source src="samples/MT-SE-ENC/mix/200478.wav"></audio></td></tr>
+<tr><td>MT-SE-DEC:</td><td><audio controls><source src="samples/MT-SE-DEC/mix/200478.wav"></audio></td></tr>
+</table>
+</blockquote>
+
+
+</body>
+</html>
