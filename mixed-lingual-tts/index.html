@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Audio Samples</title>
+  <title>Audio samples form "Building a mixed-lingual neural TTS system with only monolingual data"</title>
   <style>
     body {
       margin: 0;
-      padding: 10px 30px;
+      padding: 10px 1px;
       background: #fff;
       color: #111;
       font-size: 15px;
@@ -43,9 +43,9 @@
 <div style="display: block; margin: 0 auto; width: 80%;">
 
 <div >
-  <h2 align="center"> Audio samples for "Building a mixed-lingual neural TTS system with only monolingual data"</h2>
-  <div><b>Authors:</b> Liumeng Xue, Wei Song, Guanghui Xu, Lei Xie, Zhizheng Wu</div>
-  <div><b>Abstract:</b> This paper investigates the problem of building a mixed-lingual text-to-speech （TTS） system when only monolingual data is
+  <h2 align="center"> Audio samples form "Building a mixed-lingual neural TTS system with only monolingual data"</h2>
+  <div><b>Authors:</b> <font size=3>Liumeng Xue, Wei Song, Guanghui Xu, Lei Xie, Zhizheng Wu </font></div>
+  <div><b>Abstract:</b> <font size=3>This paper investigates the problem of building a mixed-lingual text-to-speech （TTS） system when only monolingual data is
     available, which is a typical problem when deploying Chinese neural TTS, specifically the encoder-decoder-based one. The mixed lingual here is
     Mandarin Chinese with embedded English phrases or words. We investigate the problem from two aspects: speaker similarity and intelligibility. We
     make use of multi-speaker's monolingual data, i.e. Mandarin data and English data, to build a base model, which is expected to construct Mandarin
@@ -53,7 +53,7 @@
     analyze
     phoneme embedding and encoder output representations between two languages, and investigate the choice of modeling training. We report the
     findings
-    and the challenges for building a mixed-lingual TTS with monolingual data within the encoder-decoder framework.
+    and the challenges for building a mixed-lingual TTS with monolingual data within the encoder-decoder framework.</font>
   </div>
 
 </div>
@@ -65,307 +65,534 @@
 </table>
 </blockquote>
 -->
+<br>
+<hr>
+<h2 align="left">1. Speaker embedding at differen position</h3>
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">Mandarin Samples</h3>
+      <caption align="left">(1). 这儿夏天雨水很多，可是秋天很少雨。</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-ENC/cn/000527.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/000527.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). 峨眉山今天下雨，不冷，西南风四到五级。</caption>
+      <tr>
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-ENC/cn/001576.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/001576.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). 不过稍微改变了一点儿说法。</caption>
+      <tr>
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-ENC/cn/004834.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/004834.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
+</div>   
 
-<div >
-
-<div style="height: 700px">
-  <h3 align="left">Mandarin Samples</h3>
-  <blockquote>
+<div style="height: 420px">
+  <blockquote> 
     <table align="left">
-      <caption align="left">1. 这儿夏天雨水很多，可是秋天很少雨。</caption>
+      <h3 align="left">English Samples</h3>
+      <caption align="left">(1). Hang on, gaps those of you in the know.</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>   
       <tr>
-        <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td>
-        <td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-        <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td>
-        <td align="center" width=300>Residual encoder (using SE-DEC)</td>
+        <td  align="center" width=300><audio src="samples/SE-ENC/en/300001.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC/en/300001.wav" controls=""></audio></td>
       </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). How do we develop football?</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>  
       <tr>
-        <td align="center" width=300>
-          <audio src="samples/SE-ENC/cn/000527.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC/cn/000527.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-CON/cn/000527.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-RES/cn/000527.wav" controls=""></audio>
-          <br></td>
-      </tr>
+        <td align="center" width=400><audio src="samples/SE-ENC/en/300169.wav" controls=""></audio></td>
+        <td align="center" width=400><audio src="samples/SE-DEC/en/300169.wav" controls=""></audio></td>
+      </tr>      
     </table>
-  </blockquote>
-  <blockquote>
-    <table align="left">
-      <caption align="left">2. 我很伤心，我准备冲网吧了。</caption>
+     <table align="left">     
+      <caption align="left">(3). It's a pretty difficult journey.</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>  
       <tr>
-        <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td>
-        <td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-        <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td>
-        <td align="center" width=300>Residual encoder (using SE-DEC)</td>
-      </tr>
-      <tr>
-        <td align="center" width=300>
-          <audio src="samples/SE-ENC/cn/001606.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC/cn/001606.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-CON/cn/001606.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-RES/cn/001606.wav" controls=""></audio>
-          <br></td>
-      </tr>
-    </table>
-  </blockquote>
-  <blockquote>
-    <table align="left">
-      <caption align="left">3. 太好了，我喜欢吃中餐。</caption>
-      <tr>
-        <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td>
-        <td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-        <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td>
-        <td align="center" width=300>Residual encoder (using SE-DEC)</td>
-      </tr>
-      <tr>
-        <td align="center" width=300>
-          <audio src="samples/SE-ENC/cn/002230.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC/cn/002230.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-CON/cn/002230.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-RES/cn/002230.wav" controls=""></audio>
-          <br></td>
-      </tr>
-    </table>
-  </blockquote>
-  <blockquote>
-    <table align="left">
-      <caption align="left">4. 我有你画的羊，羊的箱子和羊的嘴套子。</caption>
-      <tr>
-        <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td>
-        <td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-        <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td>
-        <td align="center" width=300>Residual encoder (using SE-DEC)</td>
-      </tr>
-      <tr>
-        <td align="center" width=300>
-          <audio src="samples/SE-ENC/cn/006449.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC/cn/006449.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-CON/cn/006449.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-RES/cn/006449.wav" controls=""></audio>
-          <br></td>
-      </tr>
-    </table>
-  </blockquote>
-  <blockquote>
-    <table align="left">
-      <caption align="left">5. 音箱网络已断开，请检查网络后重新连接。</caption>
-      <tr>
-        <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td>
-        <td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-        <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td>
-        <td align="center" width=300>Residual encoder (using SE-DEC)</td>
-      </tr>
-      <tr>
-        <td align="center" width=300>
-          <audio src="samples/SE-ENC/cn/101383.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC/cn/101383.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-CON/cn/101383.wav" controls=""></audio>
-        </td>
-        <td align="center" width=300>
-          <audio src="samples/SE-DEC-RES/cn/101383.wav" controls=""></audio>
-          <br></td>
-      </tr>
-    </table>
+        <td align="center" width=400><audio src="samples/SE-ENC/en/300307.wav" controls=""></audio></td>
+        <td align="center" width=400><audio src="samples/SE-DEC/en/300307.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
   </blockquote>
 </div>
+ 
 
-
-<div style="height: 700px;">
-  <h3 align="left"> English Samples</h3>
-	<blockquote>
+<div style="height: 420px">
+  <blockquote> 
     <table align="left">
-	<caption align="left">6. An artwork that brings more attention to gay issues is worth lots of recognition.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/en/300026.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/en/300026.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/en/300026.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300026.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-	
-	<blockquote>
-    <table align="left">
-	<caption align="left">7. It's a pretty difficult journey.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/en/300307.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/en/300307.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/en/300307.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300307.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-
-
-	<blockquote>
-    <table align="left">
-	<caption align="left">8. Strict rules apply to the exhumation of bodies.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/en/300458.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/en/300458.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/en/300458.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300458.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-	
-	<blockquote>
-    <table align="left">
-	<caption align="left">9. A lot of times we'll go just because our friends are involved.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/en/300792.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/en/300792.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/en/300792.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300792.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-	
-	<blockquote>
-    <table align="left">
-	<caption align="left">10. Ain't nobody watching over these crooks.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/en/300898.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/en/300898.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/en/300898.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300898.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-</div>
-
-<div style="height: 700px;">
-  <h3 align="left"> Mixed-lingual Samples</h3>
-	<blockquote>
-    <table align="left">
-	<caption align="left">11. Exo的二零一七冬季特别专辑"universe"于今日揭开神秘面纱.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/mix/200012.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/mix/200012.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/mix/200012.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200012.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-	
-	<blockquote>
-    <table align="left">
-	<caption align="left">12. Evolve这张专辑让imagine dragons在自省中实现突破.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
+      <h3 align="left">Mixed-lingual Samples</h3>
+      <caption align="left">(1). Evolve这张专辑让imagine dragons在自省中实现突破。</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>   
+      <tr>
     <td  align="center" width=300><audio src="samples/SE-ENC/mix/200072.wav" controls=""></audio></td>
     <td  align="center" width=300><audio src="samples/SE-DEC/mix/200072.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/mix/200072.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200072.wav" controls=""></audio><br></td>
-    </tr>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). Love herby流花的灵动之美也更添情趣此外。</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>  
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-ENC/mix/200106.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200106.wav" controls=""></audio></td>
+      </tr>      
     </table>
-    </blockquote>
-
-	<blockquote>
-    <table align="left">
-	<caption align="left">13. 八月"we young"等活动。</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/mix/200246.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/mix/200246.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/mix/200246.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200246.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-	
-	<blockquote>
-    <table align="left">
-	<caption align="left">14. Anyway接待说你可以walk in进来.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/mix/200290.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/mix/200290.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/mix/200290.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200290.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
-	
-	<blockquote>
-    <table align="left">
-	<caption align="left">15. Denny和bobby是双胞胎兄弟.</caption>
-    <tr>
-    <td align="center" width=300>Speaker embedding in encoder(SE-ENC)</td><td align="center" width=300>Speaker embedding in decoder(SE-DEC)</td>
-    <td align="center" width=500>Additional phoneme embedding context vector(using SE-DEC)</td><td align="center" width=300>Residual encoder (using SE-DEC)</td>
-    </tr>
-    <tr>
-    <td  align="center" width=300><audio src="samples/SE-ENC/mix/200462.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC/mix/200462.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-CON/mix/200462.wav" controls=""></audio></td>
-    <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200462.wav" controls=""></audio><br></td>
-    </tr>
-    </table>
-    </blockquote>
+     <table align="left">     
+      <caption align="left">(3). Mic drop已连续六天夺得了销量冠军。</caption>
+      <tr>      
+        <td align="center" width=400>Speaker embedding at encoder (SE-ENC)</td>
+        <td align="center" width=500>Speaker embedding at decoder (SE-DEC)</td>
+      </tr>  
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-ENC/mix/200111.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200111.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
 </div>
+ 
+
+<h2 align="left">2. Including versus excluding the target speaker data in the AVM training</h3>
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">Mandarin Samples</h3>
+      <caption align="left">(1). 你只需要像这样坐着，弯腰然后深呼吸。</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/cn/001240.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/001240.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). 我是顺路过来跟你告别的。</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/cn/001691.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/001691.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). 紫貂把腰拱得像弯弓一般。</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/cn/002837.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/002837.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
+</div>  
 
 
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">English Samples</h3>
+      <caption align="left">(1). How do we develop football?</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>    
+      <tr>
+        <td  align="center" width=300><audio src="samples/retrain-AVM/en/300169.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC/en/300169.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). It's a pretty difficult journey.</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>    
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/en/300307.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/en/300307.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). People are now losing their jobs.</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>    
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/en/300416.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/en/300416.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
+</div>
+ 
+
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">Mixed-lingual Samples</h3>
+      <caption align="left">(1). Lemonade和随后的“formation世界巡回演唱会。</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>   
+      <tr>
+    <td  align="center" width=300><audio src="samples/retrain-AVM/mix/200100.wav" controls=""></audio></td>
+    <td  align="center" width=300><audio src="samples/SE-DEC/mix/200100.wav" controls=""></audio></td>
+      </tr>
+     </table>
+
+     <table align="left">     
+      <caption align="left">(2). Downie的才华才得到了michele的进一步赏识。</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/mix/200478.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200478.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). Caviar lobster和牛排都一般，主打甜品阿拉斯加太甜。</caption>
+      <tr>      
+        <td align="center" width=400>Excluding the target speaker data (Retrain-AVM)</td>
+        <td align="center" width=500>Including the target speaker data (SE-DEC)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/retrain-AVM/mix/200378.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200378.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+  </blockquote>
+</div>
+ 
+ 
+ 
+<h2 align="left">3. Different language trainging data</h3>
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">Mandarin Samples</h3>
+      <caption align="left">(1). 谈好条件以后，他俩轮流嚼着口香糖。</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/004416.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/cn/004416.wav" controls=""></audio></td>
+          <td align="center" width=550><audio src="samples/SE-DEC-CORPUS-MIX/cn/004416.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). 不过稍微改变了一点儿说法。</caption>
+      <tr>
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/004834.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/cn/004834.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/cn/004834.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). 根本无法把那么多的水一下子排泄出去。</caption>
+      <tr>
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/007787.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/cn/007787.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/cn/007787.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
+</div>   
+
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">English Samples</h3>
+      <caption align="left">(1).It's a pretty difficult journey.</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/en/300307.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/en/300307.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/en/300307.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). A huge diverse country.</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>  
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/en/300774.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/en/300774.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/en/300774.wav" controls=""></audio></td>
+      </tr>      
+    </table>     
+     <table align="left">     
+      <caption align="left">(3). Amitabha was also present at the music launch of the movie.</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>  
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/en/300954.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/en/300954.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/en/300954.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+  </blockquote>
+</div>
+ 
+
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">Mixed-lingual Samples</h3>
+      <caption align="left">(1). Lemonade和随后的“formation世界巡回演唱会。</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200100.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/mix/200100.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/mix/200100.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). Caviar lobster和牛排都一般，主打甜品阿拉斯加太甜。</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>  
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200378.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/mix/200378.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/mix/200378.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). Chain和同事在一项研究中验证了edge的能力。</caption>
+      <tr>      
+        <td align="center" width=450>Using Mandarin corpus based on SE-DEC (CORPUS-MAN)</td>
+        <td align="center" width=450>Using English corpus based on SE-DEC (CORPUS-ENG)</td>
+        <td align="center" width=550>Using Mixed Mandarin-English corpus based on SE-DEC (CORPUS-MIX)</td>
+      </tr>  
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/mix/200385.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-ENG/mix/200385.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-CORPUS-MIX/mix/200385.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
+</div>
+  
+ 
+ 
+ 
+<h2 align="left">3. The use of phoneme-informed attention</h3>
+<div style="height: 420px">
+  <blockquote>
+    <table align="left">
+      <h3 align="left">Mandarin Samples</h3>
+      <caption align="left">(1). 紫貂把腰拱得像弯弓一般。</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/002837.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-PECV/cn/002837.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-RES/cn/002837.wav" controls=""></audio></td>
+      </tr>
+     </table>  
+    <table align="left">
+      <caption align="left">(2). 我有你画的羊，羊的箱子和羊的嘴套子…</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/006449.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-PECV/cn/006449.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-RES/cn/006449.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(3). 眼看郭丁香操劳过度，人老珠黄，没有年轻时漂亮了，张生慢慢变得喜新厌旧。。</caption>
+      <tr>
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/SE-DEC/cn/007800.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-PECV/cn/007800.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/SE-DEC-RES/cn/007800.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+  </blockquote>
+</div>   
+
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">English Samples</h3>
+      <caption align="left">(1). People are now losing their jobs.</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>   
+      <tr>
+        <td  align="center" width=300><audio src="samples/SE-DEC/en/300416.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-PECV/en/300416.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300416.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). Why is oil so important?</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>  
+      <tr>
+        <td  align="center" width=300><audio src="samples/SE-DEC/en/300672.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-PECV/en/300672.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300672.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+    <table align="left">
+      <caption align="left">(3). Ain't nobody watching over these crooks.</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>   
+      <tr>
+        <td  align="center" width=300><audio src="samples/SE-DEC/en/300898.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-PECV/en/300898.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-RES/en/300898.wav" controls=""></audio></td>
+      </tr>
+     </table>    
+  </blockquote>
+</div>
+ 
+
+<div style="height: 420px">
+  <blockquote> 
+    <table align="left">
+      <h3 align="left">Mixed-lingual Samples</h3>
+      <caption align="left">(1). Love herby流花的灵动之美也更添情趣此外。</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>   
+      <tr>
+    <td  align="center" width=300><audio src="samples/SE-DEC/mix/200106.wav" controls=""></audio></td>
+    <td  align="center" width=300><audio src="samples/SE-DEC-PECV/mix/200106.wav" controls=""></audio></td>
+    <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200106.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). Change可以指任何变化，shift表示变动多指位置。</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>  
+      <tr>
+        <td  align="center" width=300><audio src="samples/SE-DEC/mix/200389.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-PECV/mix/200389.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200389.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). Downie的才华才得到了michele的进一步赏识。</caption>
+      <tr>      
+        <td align="center" width=450>Speaker embedding at decoder (SE-DEC)</td>
+        <td align="center" width=450>Phoneme embedding context vector based on SE-DEC (PECV)</td>
+        <td align="center" width=450>Residual encoder based on SE-DEC (RES)</td>
+      </tr>  
+      <tr>
+        <td  align="center" width=300><audio src="samples/SE-DEC/mix/200478.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-PECV/mix/200478.wav" controls=""></audio></td>
+        <td  align="center" width=300><audio src="samples/SE-DEC-RES/mix/200478.wav" controls=""></audio></td>
+      </tr>      
+    </table>    
+  </blockquote>
+</div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 </div>
 
 </body>
