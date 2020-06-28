@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Audio samples from "Cycle Consistent Network for End-to-end Style Transfer TTS Training"</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px 1px;
+      background: #fff;
+      color: #111;
+      font-size: 15px;
+      font-family: sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    audio {
+      width: 250px;
+      margin-right: 10px;
+    }
+
+    .sample {
+      font-size: 0.9em;
+      font-style: italic;
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    caption {
+      text-align: left;
+      font-size: 1.0em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: block; margin: 0 auto; width: 80%;">
+
+    <div>
+      <h2 align="center"> Cycle Consistent Network for End-to-end Style Transfer TTS Training
+      </h2>
+      <!--  <div><b>Paper: </b> <font size=3> <a href="https://arxiv.org/abs/1904.06063">arXiv</a></font></div>
+-->
+      <div><b>Authors:</b>
+        <font size=3>Liumeng Xue<sup>1</sup>, Shifeng Pan<sup>2</sup>, Lei He<sup>2</sup>, Lei Xie<sup>1</sup>, Frank K.
+          Soong<sup>2</sup> </font>
+      </div>
+      <div>
+        <font size=3>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>1</sup>Audio,
+          Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical
+          University, Xi’an, China</font>
+      </div>
+      <div>
+        <font size=3>&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Microsoft China </font>
+      </div>
+      <div><b>Abstract:</b>
+        <font size=3>In this paper, we propose an end-to-end, style transfer TTS. On top of an end-to-end multi-speaker
+          TTS model where Variational Autoencoder (2.VAE) is used to learn the latent representation of the speaking
+          style
+          in speech, we firstly augment it with an unpaired path including unpaired style reference input, variational
+          style encoder and transferred output, to learn cross-speaker style representation, in addition to the paired
+          one. Secondly, a cycle consistency network is proposed to make the unpaired path trainable algorithmically.
+          The Ablation tests on two separate style encoders and cycle structure show their effectiveness. The final
+          evaluations show that the proposed approach is more effective than Global Style Token (1.GST) and 2.VAE based
+          models on intra-speaker, inter-speaker and unseen speaker style transfer, for both parallel transfer and
+          unparallel transfer. </font>
+        <!--  <div><b> <font size=3>Paper accepted by INTERSPEECH 2019 </font></b></div> -->
+      </div>
+
+    </div>
+    <!--
+<blockquote>
+<table>
+<tr><td><img src="figures/mos.png" width=500></td></tr>
+<tr><td align=center>Figure 1. MOS values of different systems</td></tr>
+</table>
+</blockquote>
+
+   
+    <hr>
+-->
+    <br>
+    <div>
+      <font size=3>
+        <b>GST: </b> GST baseline
+      </font>
+    </div>
+    <div>
+      <font size=3>
+        <b>VAE: </b> VAE baseline
+      </font>
+    </div>
+
+    <div>
+      <font size=3>
+        <b>OneStyNoCycle: </b> The model using one style encoder without sytle encoder
+      </font>
+    </div>
+
+    <div>
+      <font size=3>
+        <b>OneStyCycle: </b> The model using one style encoder with sytle encoder (Unpaired output)
+      </font>
+    </div>
+
+    <div>
+      <font size=3>
+        <b>TwoStyCycle paired: </b> Paired output from the model using one style encoder with sytle encoder
+      </font>
+    </div>
+
+    <div>
+      <font size=3>
+        <b>TwoStyCycle unpaired: </b> Unpaired output from the model using one style encoder with sytle encoder
+      </font>
+    </div>
+
+
+    <h2 align="left">1. Inter-speaker style transfer </h2>
+    <div style="height: 470px">
+      <blockquote>
+        <table align="left">
+          <h3 align="left">Parallel transfer</h3>
+          <caption align="left">(1). It was an office still, but not his. </caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/sty_ref/0000000004.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/spk_ref/0000000004.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=450>OneStyNoCycle </td>
+            <td align="center" width=550>OneStyCycle</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/1.GST/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/2.VAE/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/3.oneStyEncNoCycle/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/4.oneStyEncCycle/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/parallel/5.1.oneStyEncCycle_paired/0000000004.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/parallel/5.2.oneStyEncCycle_unpaired/0000000004.wav" controls=""></audio>
+            </td>
+          </tr>
+        </table>
+
+        <table align="left">
+          <caption align="left">(2). You know me don't you? </caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/sty_ref/0000000014.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/spk_ref/0000000014.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=450>OneStyNoCycle </td>
+            <td align="center" width=550>OneStyCycle</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/1.GST/0000000014.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/2.VAE/0000000014.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/3.oneStyEncNoCycle/0000000014.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/parallel/4.oneStyEncCycle/0000000014.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/parallel/5.1.oneStyEncCycle_paired/0000000014.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/parallel/5.2.oneStyEncCycle_unpaired/0000000014.wav" controls=""></audio>
+            </td>
+          </tr>
+        </table>
+
+      </blockquote>
+    </div>
+    <br>
+    <div style="height: 500px">
+      <blockquote>
+        <table align="left">
+          <h3 align="left">Unparallel transfer</h3>
+          <caption align="left">(1). At eight in the morning a ray of daylight came to wake us up.</caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/sty_ref/0000000004.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/spk_ref/0000000004.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=450>OneStyNoCycle </td>
+            <td align="center" width=550>OneStyCycle</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/1.GST/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/2.VAE/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/unparallel/3.oneStyEncNoCycle/0000000004.wav" controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/4.oneStyEncCycle/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/unparallel/5.1.oneStyEncCycle_paired/0000000004.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/unparallel/5.2.oneStyEncCycle_unpaired/0000000004.wav" controls=""></audio>
+            </td>
+          </tr>
+        </table>
+        <table align="left">
+          <caption align="left">(2). You know yourself why he'll come.</caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/sty_ref/0000000021.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/spk_ref/0000000021.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=450>OneStyNoCycle </td>
+            <td align="center" width=550>OneStyCycle</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/1.GST/0000000021.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/2.VAE/0000000021.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/unparallel/3.oneStyEncNoCycle/0000000021.wav" controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/1.inter-speaker/unparallel/4.oneStyEncCycle/0000000021.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/unparallel/5.1.oneStyEncCycle_paired/0000000021.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/1.inter-speaker/unparallel/5.2.oneStyEncCycle_unpaired/0000000021.wav" controls=""></audio>
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+    </div>
+
+
+    <h2 align="left">2. Intra-speaker style transfer </h2>
+    <div style="height: 470px">
+      <blockquote>
+        <table align="left">
+          <h3 align="left">Parallel transfer</h3>
+          <caption align="left">(1). But I mean to see where fate will lead me. </caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/sty_ref/0000000013.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/spk_ref/0000000013.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/1.GST/0000000013.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/2.VAE/0000000013.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/parallel/3.1.oneStyEncCycle_paired/0000000013.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/parallel/3.2.oneStyEncCycle_unpaired/0000000013.wav" controls=""></audio>
+            </td>
+          </tr>
+        </table>
+
+        <table align="left">
+          <caption align="left">(2). I won't let him be carried out! </caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/sty_ref/0000000018.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/spk_ref/0000000018.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/1.GST/0000000018.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/parallel/2.VAE/0000000018.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/parallel/3.1.oneStyEncCycle_paired/0000000018.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/parallel/3.2.oneStyEncCycle_unpaired/0000000018.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+
+      </blockquote>
+    </div>
+    <br>
+    <div style="height: 500px">
+      <blockquote>
+        <table align="left">
+          <h3 align="left">Unparallel transfer</h3>
+          <caption align="left">(1). It was more likely my friend Rasta.</caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/sty_ref/0000000004.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/spk_ref/0000000004.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/1.GST/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/2.VAE/0000000004.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/unparallel/3.1.oneStyEncCycle_paired/0000000004.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/unparallel/3.2.oneStyEncCycle_unpaired/0000000004.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+        <table align="left">
+          <caption align="left">(2). Is that the meaning of the marks upon your neck?</caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/sty_ref/0000000010.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/spk_ref/0000000010.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle paired</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/1.GST/0000000010.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/2.intra-speaker/unparallel/2.VAE/0000000010.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/unparallel/3.1.oneStyEncCycle_paired/0000000010.wav" controls=""></audio>
+            </td>
+            <td align="center" width=400><audio
+                src="samples/2.intra-speaker/unparallel/3.2.oneStyEncCycle_unpaired/0000000010.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+    </div>
+
+
+    <h2 align="left">3. Unseen speaker style transfer </h2>
+    <div style="height: 470px">
+      <blockquote>
+        <table align="left">
+          <h3 align="left">Parallel transfer</h3>
+          <caption align="left">(1). "I love them," said Dorothy. </caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/sty_ref/0000000017.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/spk_ref/0000000017.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/1.GST/0000000017.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/2.VAE/0000000017.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/3.unseen-speaker/parallel/3.oneStyEncCycle_unpaired/0000000017.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+
+        <table align="left">
+          <caption align="left">(2). Are our lackeys sufficiently devoted to us to risk their lives for us? </caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/sty_ref/0000000021.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/spk_ref/0000000021.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/1.GST/0000000021.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/parallel/2.VAE/0000000021.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/3.unseen-speaker/parallel/3.oneStyEncCycle_unpaired/0000000021.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+
+      </blockquote>
+    </div>
+    <br>
+    <div style="height: 500px">
+      <blockquote>
+        <table align="left">
+          <h3 align="left">Unparallel transfer</h3>
+          <caption align="left">(1). "I love them," said Dorothy.</caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/sty_ref/0000000001.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/spk_ref/0000000001.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/1.GST/0000000001.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/2.VAE/0000000001.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/3.unseen-speaker/unparallel/3.oneStyEncCycle_unpaired/0000000001.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+        <table align="left">
+          <caption align="left">(2). An eternal and imperishable example.</caption>
+          <tr>
+            <td align="center" width=450>Style reference</td>
+            <td align="center" width=450>Speaker reference</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/sty_ref/0000000005.wav"
+                controls=""></audio>
+            </td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/spk_ref/0000000005.wav"
+                controls=""></audio>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width=450>GST</td>
+            <td align="center" width=450>VAE</td>
+            <td align="center" width=550>TwoStyCycle unpaired</td>
+          </tr>
+          <tr>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/1.GST/0000000005.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio src="samples/3.unseen-speaker/unparallel/2.VAE/0000000005.wav"
+                controls=""></audio></td>
+            <td align="center" width=400><audio
+                src="samples/3.unseen-speaker/unparallel/3.oneStyEncCycle_unpaired/0000000005.wav" controls=""></audio>
+            </td>
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+    </div>
+
+
+</body>
+
+</html>
