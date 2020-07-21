@@ -61,16 +61,7 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Microsoft China </font>
       </div>
       <div><b>Abstract:</b>
-        <font size=3>In this paper, we propose an end-to-end, style transfer TTS. On top of an end-to-end multi-speaker
-          TTS model where Variational Autoencoder (2.VAE) is used to learn the latent representation of the speaking
-          style
-          in speech, we firstly augment it with an unpaired path including unpaired style reference input, variational
-          style encoder and transferred output, to learn cross-speaker style representation, in addition to the paired
-          one. Secondly, a cycle consistency network is proposed to make the unpaired path trainable algorithmically.
-          The Ablation tests on two separate style encoders and cycle structure show their effectiveness. The final
-          evaluations show that the proposed approach is more effective than Global Style Token (1.GST) and 2.VAE based
-          models on intra-speaker, inter-speaker and unseen speaker style transfer, for both parallel transfer and
-          unparallel transfer. </font>
+        <font size=3>In this paper, we propose a cycle network based, end-to-end TTS for improving speaking style transfer training. End-to-end, multi-speaker TTS systems of Variational Autoencoder (VAE) and Global Style Token (GST) are chosen as baseline systems to be compared with the proposed approach in their corresponding style transfer performance. In the proposed approach we augment the VAE baseline model with an unpaired path which is made of unpaired style reference input, variational style encoder and transferred output, to learn the style representation intra- and inter- speakers, jointly with the paired path. An interconnected, cycle consistent network structure is introduced to make the training algorithm tractable. The Ablation tests on two separate style encoders and cycle structure show their effectiveness in style transfer performance. Compared with the baseline systems, the proposed approach is shown to be more effective than both GST and VAE based models in intra- and inter-speaker or unseen speaker style transfer, for both parallel and unparallel transfer.</font>
         <!--  <div><b> <font size=3>Paper accepted by INTERSPEECH 2019 </font></b></div> -->
       </div>
 
