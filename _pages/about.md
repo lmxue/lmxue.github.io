@@ -19,7 +19,7 @@ redirect_from:
 # About me
 <span class='anchor' id='about-me'></span>
 
-Liumeng Xue is a Postdoctoral Research Fellow at the Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://scholar.google.com/citations?user=z8_x7C8AAAAJ&hl=en) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include speech, music and audio generation, deepfake detection, human-computer interaction, scientific visualization.
+Liumeng Xue is a Postdoctoral Research Fellow at the Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://colips.org/~eleliha/) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include speech, music and audio generation, deepfake detection, human-computer interaction, scientific visualization.
 
 
 <!-- # 📜 Research Area
@@ -31,7 +31,7 @@ Liumeng Xue is a Postdoctoral Research Fellow at the Chinese University of Hong 
 </table> -->
 
 
-# Research Experience
+# Research
 <span class='anchor' id='research_experience'></span>
 
 - *2018.10 - 2019.04*, Research Intern, JD.COM AI Lab, China.
@@ -56,8 +56,8 @@ Liumeng Xue is a Postdoctoral Research Fellow at the Chinese University of Hong 
 
 - [Learning Noise-independent Speech Representation for High-quality Voice Conversion for Noisy Target Speakers](https://arxiv.org/abs/2207.00756), **Liumeng Xue**, Shan Yang, Na Hu, Dan Su, Lei Xie. **INTERSPEECH**, 2022
 
-
-**Reviewer**
+# Research Experience
+# Reviewer
 <span class='anchor' id='others'></span>
 - Reviewer of TASLP, ICASSP, INTERSPEECH, ASRU, ICMC, etc.
 

@@ -13,11 +13,11 @@ main:
   #   url: "/#-education"
 
   - title: "Publication"
-    url: "/#-publication"
+    url: "/#publication"
     
   # - title: "Code"
   #   url: "/#-open-source-code"
     
 
   - title: "Others"
-    url: "/#-others"
+    url: "/#others"
