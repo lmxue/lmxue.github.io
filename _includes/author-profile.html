@@ -1,5 +1,5 @@
 {% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
@@ -8,30 +8,36 @@
     <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
   </div>
 
- <div class="author__content">
+  <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<a href="https://drive.google.com/file/d/1FSzVAMIVPtJYGLjx2Rtit6iVuYVQy5h6/view?usp=sharing"><p class="author__bio">{{ author.bio }}</p></a>{% endif %}
+    {% if author.bio %}<a href="https://drive.google.com/file/d/1FSzVAMIVPtJYGLjx2Rtit6iVuYVQy5h6/view?usp=sharing">
+      <p class="author__bio">{{ author.bio }}</p>
+    </a>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
-      <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> jiadong.wang@u.nus.edu</a></li>
+      <li>
+        <div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div>
+      </li>
+      <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+          xueliumeng@cuhk.edu.cn</a></li>
       <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
-      <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-<!--       <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i>
+          Github</a></li>
+      <!--       <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       <li><a href="https://space.bilibili.com/194466325"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Bilibili</a></li> -->
-      
+
     </ul>
-      <div class="author__urls_sm">
+    <div class="author__urls_sm">
       <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
       <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       <a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i></a>
       <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
-<!--       <a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+      <!--       <a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
       <a href="https://space.bilibili.com/194466325"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i></a> -->
-      
+
     </div>
   </div>
 </div>
