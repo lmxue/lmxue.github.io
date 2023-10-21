@@ -56,7 +56,7 @@ Liumeng Xue is a Postdoctoral Researcher at the Chinese University of Hong Kong,
 
 - [Learning Noise-independent Speech Representation for High-quality Voice Conversion for Noisy Target Speakers](https://arxiv.org/abs/2207.00756), **Liumeng Xue**, Shan Yang, Na Hu, Dan Su, Lei Xie. **INTERSPEECH**, 2022
 
-# Research Experience
+
 # Reviewer
 <span class='anchor' id='others'></span>
 - Reviewer of TASLP, ICASSP, INTERSPEECH, ASRU, ICMC, etc.
