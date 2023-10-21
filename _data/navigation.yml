@@ -3,8 +3,11 @@ main:
   - title: "About Me"
     url: "/#about-me"
 
-  - title: "Research"
-    url: "/#-research-area"
+  - title: "Research Experience"
+    url: "/#research_experience"
+
+  # - title: "Research"
+  #   url: "/#-research-area"
 
   # - title: "Education"
   #   url: "/#-education"
@@ -15,8 +18,6 @@ main:
   # - title: "Code"
   #   url: "/#-open-source-code"
     
-  - title: "Internship"
-    url: "/#-internship-and-visiting-experience"
 
   - title: "Others"
     url: "/#-others"
