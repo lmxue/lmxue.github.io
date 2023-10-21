@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Liumeng Xue"
   avatar           : "images/photo.png"
-  bio              : "[Curriculum Vitae]"
+  # bio              : "[Curriculum Vitae]"
   # location         : "Shenzhen"
   employer         :
   pubmed           : 
