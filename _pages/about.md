@@ -19,7 +19,7 @@ redirect_from:
 # About me
 <span class='anchor' id='about-me'></span>
 
-Liumeng Xue is a Postdoctoral Researcher at the Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://colips.org/~eleliha/) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include audio, speech, and language Processing, speech, music and audio generation and deepfake detection.
+Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://colips.org/~eleliha/) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include audio, speech, and language Processing, speech, music and audio generation and deepfake detection.
 
 
 <!-- # 📜 Research Area
@@ -39,7 +39,7 @@ Liumeng Xue is a Postdoctoral Researcher at the Chinese University of Hong Kong,
 - *2021.06 - 2021.11*, Research Intern, Tencent AI Lab, China.
 - *2021.11 - 2022.10*, Research Intern, Microsoft, China.
 
-# Publication
+# Some Publications
 <span class='anchor' id='publication'></span>
 
 **2023**
@@ -56,6 +56,17 @@ Liumeng Xue is a Postdoctoral Researcher at the Chinese University of Hong Kong,
 
 - [Learning Noise-independent Speech Representation for High-quality Voice Conversion for Noisy Target Speakers](https://arxiv.org/abs/2207.00756), **Liumeng Xue**, Shan Yang, Na Hu, Dan Su, Lei Xie. **INTERSPEECH**, 2022
 
+
+**2021**
+- [Cycle consistent network for end-to-end style transfer TTS training](https://europepmc.org/article/med/33780874) **Liumeng Xue**, Shifeng Pan, Lei He, Lei Xie, Frank K Soong. **Neural Networks** 2021
+
+- [Controllable emotion transfer for end-to-end speech synthesis](https://ieeexplore.ieee.org/abstract/document/9362069/) Tao Li, Shan Yang, **Liumeng Xue**, Lei Xie. **ISCSLP** 2021
+
+**2020**
+- [On the localness modeling for the self-attention based end-to-end speech synthesis](https://europepmc.org/article/med/32088566) Shan Yang, Heng Lu, Shiyin Kang, **Liumeng Xue**, Jinba Xiao, Dan Su, Lei Xie, Dong Yu. **Neural networks** 2020
+
+**2009**
+- [Building a mixed-lingual neural TTS system with only monolingual data](https://www.isca-speech.org/archive/interspeech_2019/xue19_interspeech.html) **Liumeng Xue**, Wei Song, Guanghui Xu, Lei Xie, Zhizheng Wu. **INTERSPEECH** 2013
 
 # Reviewer
 <span class='anchor' id='others'></span>
