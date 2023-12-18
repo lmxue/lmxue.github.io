@@ -16,6 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 
+
 # About me
 <span class='anchor' id='about-me'></span>
 
@@ -54,30 +55,29 @@ I'm participating in and leading the development of the prototype of the open-so
 # Publications
 <span class='anchor' id='publication'></span>
 
+
+
 **Vocoder**
+
 - [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf), Yicheng Gu, Xueyao Zhang, **Liumeng Xue**, Zhizheng Wu, **ICASSP**, 2024.
+
 
 **Sining Voice Conversion (SVC)**
 
 - [Leveraging Content-based Features from Multiple Acoustic Models for Singing Voice Conversion](https://arxiv.org/pdf/2310.11160.pdf), Xueyao Zhang, Yicheng Gu, Haopeng Chen, Zihao Fang, Lexiao Zou, **Liumeng Xue**, Zhizheng Wu, 2023.
 
+
 **Deepfake Detection**
 
 - [An Initial Investigation of Neural Replay Simulator for Over-the-Air Adversarial Perturbations to Automatic Speaker Verification](https://arxiv.org/pdf/2310.05354.pdf), Jiaqi Li, Li Wang, **Liumeng Xue**, Lei Wang, Zhizheng Wu, 2023.
+
 
 **Text to Speech (TTS)**
 - [SponTTS: modeling and transferring spontaneous style for TTS](https://arxiv.org/pdf/2311.07179.pdf), Hanzhao Li, Xinfa Zhu, **Liumeng Xue**, Yang Song, Yunlin Chen, Lei Xie, **ICASSP**, 2024.
 
 - [HiGNN-TTS: Hierarchical Prosody Modeling with Graph Neural Networks for Expressive Long-form TTS](https://arxiv.org/pdf/2309.13907.pdf), Dake Guo, Xinfa Zhu, **Liumeng Xue**, Tao Li, Yuanjun Lv, Yuepeng Jiang, Lei Xie, **ASRU**, 2023.
 
-**Voice Conversion (VC)**
-- [Expressive-VC: Highly Expressive Voice Conversion with Attention Fusion of Bottleneck and Perturbation Features](https://ieeexplore.ieee.org/abstract/document/10096057), Ziqian Ning, Qicong Xie, Pengcheng Zhu, Zhichao Wang, **Liumeng Xue**, Jixun Yao, Lei Xie, Mengxiao Bi. **ICASSP**, 2023.
-
-<!-- **2022** -->
 - [ParaTTS: Learning Linguistic and Prosodic Cross-sentence Information in Paragraph-based TTS](https://arxiv.org/pdf/2209.06484.pdf), **Liumeng Xue**, Frank K. Soong, Shaofei Zhang, Lei Xie. **TASLP**, 2022
-
-- [Learning Noise-independent Speech Representation for High-quality Voice Conversion for Noisy Target Speakers](https://arxiv.org/abs/2207.00756), **Liumeng Xue**, Shan Yang, Na Hu, Dan Su, Lei Xie. **INTERSPEECH**, 2022
-
 
 <!-- **2021** -->
 - [Cycle consistent network for end-to-end style transfer TTS training](https://europepmc.org/article/med/33780874) **Liumeng Xue**, Shifeng Pan, Lei He, Lei Xie, Frank K Soong. **Neural Networks** 2021
@@ -89,6 +89,12 @@ I'm participating in and leading the development of the prototype of the open-so
 
 <!-- **2009** -->
 - [Building a mixed-lingual neural TTS system with only monolingual data](https://www.isca-speech.org/archive/interspeech_2019/xue19_interspeech.html) **Liumeng Xue**, Wei Song, Guanghui Xu, Lei Xie, Zhizheng Wu. **INTERSPEECH** 2013
+
+
+**Voice Conversion (VC)**
+- [Expressive-VC: Highly Expressive Voice Conversion with Attention Fusion of Bottleneck and Perturbation Features](https://ieeexplore.ieee.org/abstract/document/10096057), Ziqian Ning, Qicong Xie, Pengcheng Zhu, Zhichao Wang, **Liumeng Xue**, Jixun Yao, Lei Xie, Mengxiao Bi. **ICASSP**, 2023.
+
+- [Learning Noise-independent Speech Representation for High-quality Voice Conversion for Noisy Target Speakers](https://arxiv.org/abs/2207.00756), **Liumeng Xue**, Shan Yang, Na Hu, Dan Su, Lei Xie. **INTERSPEECH**, 2022
 
 
 # Reviewer
