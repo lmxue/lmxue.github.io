@@ -24,6 +24,7 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 
 
 # News
+<span class='anchor' id='news'></span>
 - We released [Amphion](https://github.com/open-mmlab/Amphion), a toolkit for Audio, Music, and Speech Generation. The technical report is available [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2312.09911). The Hugging Face of Amphion is [here](https://huggingface.co/amphion).
 - [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf) accepted by ICASSP2024, also integrated in [Amphion](https://github.com/open-mmlab/Amphion) 
 - [SponTTS: modeling and transferring spontaneous style for TTS](https://arxiv.org/pdf/2311.07179.pdf) accepted by ICASSP2024.
