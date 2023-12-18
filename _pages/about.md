@@ -25,7 +25,6 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 
 # News
 - We released [Amphion](https://github.com/open-mmlab/Amphion), a toolkit for Audio, Music, and Speech Generation. The technical report is available [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2312.09911). The Hugging Face of Amphion is [here](https://huggingface.co/amphion).
-I'm participating in and leading the development of the prototype of the open-source [Amphion](https://github.com/open-mmlab/Amphion) toolkit.
 - [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf) accepted by ICASSP2024, also integrated in [Amphion](https://github.com/open-mmlab/Amphion) 
 - [SponTTS: modeling and transferring spontaneous style for TTS](https://arxiv.org/pdf/2311.07179.pdf) accepted by ICASSP2024.
 - [Leveraging Content-based Features from Multiple Acoustic Models for Singing Voice Conversion](https://arxiv.org/pdf/2310.11160.pdf) accepted by ML4Audio @ NeurIPS 2023.
@@ -56,22 +55,6 @@ I'm participating in and leading the development of the prototype of the open-so
 <span class='anchor' id='publication'></span>
 
 
-
-**Vocoder**
-
-- [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf), Yicheng Gu, Xueyao Zhang, **Liumeng Xue**, Zhizheng Wu, **ICASSP**, 2024.
-
-
-**Sining Voice Conversion (SVC)**
-
-- [Leveraging Content-based Features from Multiple Acoustic Models for Singing Voice Conversion](https://arxiv.org/pdf/2310.11160.pdf), Xueyao Zhang, Yicheng Gu, Haopeng Chen, Zihao Fang, Lexiao Zou, **Liumeng Xue**, Zhizheng Wu, 2023.
-
-
-**Deepfake Detection**
-
-- [An Initial Investigation of Neural Replay Simulator for Over-the-Air Adversarial Perturbations to Automatic Speaker Verification](https://arxiv.org/pdf/2310.05354.pdf), Jiaqi Li, Li Wang, **Liumeng Xue**, Lei Wang, Zhizheng Wu, 2023.
-
-
 **Text to Speech (TTS)**
 - [SponTTS: modeling and transferring spontaneous style for TTS](https://arxiv.org/pdf/2311.07179.pdf), Hanzhao Li, Xinfa Zhu, **Liumeng Xue**, Yang Song, Yunlin Chen, Lei Xie, **ICASSP**, 2024.
 
@@ -95,6 +78,22 @@ I'm participating in and leading the development of the prototype of the open-so
 - [Expressive-VC: Highly Expressive Voice Conversion with Attention Fusion of Bottleneck and Perturbation Features](https://ieeexplore.ieee.org/abstract/document/10096057), Ziqian Ning, Qicong Xie, Pengcheng Zhu, Zhichao Wang, **Liumeng Xue**, Jixun Yao, Lei Xie, Mengxiao Bi. **ICASSP**, 2023.
 
 - [Learning Noise-independent Speech Representation for High-quality Voice Conversion for Noisy Target Speakers](https://arxiv.org/abs/2207.00756), **Liumeng Xue**, Shan Yang, Na Hu, Dan Su, Lei Xie. **INTERSPEECH**, 2022
+
+
+**Sining Voice Conversion (SVC)**
+
+- [Leveraging Content-based Features from Multiple Acoustic Models for Singing Voice Conversion](https://arxiv.org/pdf/2310.11160.pdf), Xueyao Zhang, Yicheng Gu, Haopeng Chen, Zihao Fang, Lexiao Zou, **Liumeng Xue**, Zhizheng Wu, 2023.
+
+
+**Vocoder**
+
+- [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf), Yicheng Gu, Xueyao Zhang, **Liumeng Xue**, Zhizheng Wu, **ICASSP**, 2024.
+
+
+**Deepfake Detection**
+
+- [An Initial Investigation of Neural Replay Simulator for Over-the-Air Adversarial Perturbations to Automatic Speaker Verification](https://arxiv.org/pdf/2310.05354.pdf), Jiaqi Li, Li Wang, **Liumeng Xue**, Lei Wang, Zhizheng Wu, 2023.
+
 
 
 # Reviewer
