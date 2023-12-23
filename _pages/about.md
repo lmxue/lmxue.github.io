@@ -45,11 +45,10 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 # Research Experience
 <span class='anchor' id='research_experience'></span>
 
-- *2018.10 - 2019.04*, Research Intern, JD.COM AI Lab, China.
-- *2019.04 - 2020.06*, Research Intern, Microsoft, China.
-- *2021.06 - 2021.11*, Research Intern, Tencent AI Lab, China.
 - *2021.11 - 2022.10*, Research Intern, Microsoft, China.
-
+- *2021.06 - 2021.11*, Research Intern, Tencent AI Lab, China.
+- *2019.04 - 2020.06*, Research Intern, Microsoft, China.
+- *2018.10 - 2019.04*, Research Intern, JD.COM AI Lab, China.
 
 
 # Publications
