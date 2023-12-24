@@ -20,7 +20,7 @@ redirect_from:
 # About me
 <span class='anchor' id='about-me'></span>
 
-Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://colips.org/~eleliha/) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include audio, speech, and language processing, generation, and deepfake detection.
+Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://colips.org/~eleliha/) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include audio, music, and speech generation.
 
 
 # News
