@@ -3,10 +3,10 @@ main:
   - title: "About Me"
     url: "/#about-me"
 
-  - title: "News"
+  - title: "Recent News"
     url: "/#news"
 
-  - title: "Research Experience"
+  - title: "Research Experiences"
     url: "/#research_experience"
 
   # - title: "Research"
@@ -15,12 +15,12 @@ main:
   # - title: "Education"
   #   url: "/#-education"
 
-  - title: "Publication"
+  - title: "Selected Publications"
     url: "/#publication"
     
   # - title: "Code"
   #   url: "/#-open-source-code"
     
 
-  - title: "Others"
+  - title: "Awards & Services"
     url: "/#others"
