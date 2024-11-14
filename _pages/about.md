@@ -30,16 +30,19 @@ My research interests include audio, speech and language processing, audio, musi
 <span class='anchor' id='news'></span>
 - 🎉 Aug 30, 2024: [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2412.09911) is accepted by IEEE SLT 2024.
 - 🎉 Aug 30, 2024: [Leveraging Diverse Semantic-based Audio Pretrained Models for Singing Voice Conversion](https://arxiv.org/abs/2310.11160) is accepted by IEEE SLT 2024.
-- 🎉 Aug 20, 2024: [The ISCSLP 2024 Conversational Voice Clone (CoVoC) Challenge: Tasks, Results and Findings](https://arxiv.org/abs/2411.00064) accepted by ISCSLP 2024.
-- 🎉 Aug 20, 2024: [SingVisio](https://arxiv.org/abs/2402.12660) accepted by Computers & Graphics.
-- 🎉 Jun 13, 2024: [Multi-Level Temporal-Channel Speaker Retrieval for Zero-Shot Voice Conversion](https://ieeexplore.ieee.org/abstract/document/10542423) has been accepted and published by TASLP.
-- 🎉 Jun 4, 2024: 3 papers ([WenetSpeech4TTS](https://arxiv.org/abs/2406.05763), [Single-Codec](https://www.arxiv.org/abs/2406.07422), [TACA-Audiobook](https://arxiv.org/abs/2406.05672)) are accepted by INTERSPEECH2024.
+- 🎉 Aug 20, 2024: [The ISCSLP 2024 Conversational Voice Clone (CoVoC) Challenge: Tasks, Results and Findings](https://arxiv.org/abs/2411.00064) is accepted by ISCSLP 2024.
+- 🎉 Aug 20, 2024: [SingVisio](https://arxiv.org/abs/2402.12660) is accepted by Computers & Graphics.
+- 🎉 Jun 13, 2024: [Multi-Level Temporal-Channel Speaker Retrieval for Zero-Shot Voice Conversion](https://ieeexplore.ieee.org/abstract/document/10542423) is accepted and published by TASLP.
+- 🎉 Jun 4, 2024: [WenetSpeech4TTS](https://arxiv.org/abs/2406.05763), [Single-Codec](https://www.arxiv.org/abs/2406.07422), [TACA-Audiobook](https://arxiv.org/abs/2406.05672) are accepted by INTERSPEECH2024.
 - 🎉 May 31, 2024: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) is launched.
 - 🎉 Feb 28, 2024: [IEEE SLT workshop 2024](https://2024.ieeeslt.org) is announced.
-- 🎉 Dec 18, 2023: [Amphion v0.1 ](https://arxiv.org/abs/2312.09911) is released. Amphion is an open-source platform for Audio, Music, and Speech Generation. 
+- 🎉 Dec 18, 2023: [Amphion](https://arxiv.org/abs/2312.09911) is released. Amphion is an open-source platform for Audio, Music, and Speech Generation. 
   - I built the fundamental framework to integrate various generative tasks into a unified pipeline, including data pre-processing, model building, training and inference, etc. [Github]((https://github.com/open-mmlab/Amphion))
   - I led the reproduction of several typical TTS models and released the pre-trained models. [HuggingFace](https://huggingface.co/amphion)
   - I developed and led the [SingVisio](https://arxiv.org/abs/2402.12660) project, an interactive visualization platform that makes the inner work mechanism of diffusion model easily understanble in the context of singing voice conversion. [Try it](https://dsvc.openmmlab.org.cn/).
+<!-- - 🎉 Aug 27, 2023: [IEEE SLT workshop 2024 proposals] is accepted.  -->
+
+
 
 <!-- - [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf) accepted by ICASSP2024, also integrated in [Amphion](https://github.com/open-mmlab/Amphion) 
 - [SponTTS: modeling and transferring spontaneous style for TTS](https://arxiv.org/pdf/2311.07179.pdf) accepted by ICASSP2024.
