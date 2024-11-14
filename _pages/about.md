@@ -20,19 +20,25 @@ redirect_from:
 # About me
 <span class='anchor' id='about-me'></span>
 
-Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong, Shenzhen, working with Prof. [Haizhou Li](https://colips.org/~eleliha/) and Prof. [Zhizheng Wu](https://drwuz.com/). She received her Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), Xian, China, supervised by Prof. [Lei Xie](http://www.nwpu-aslp.org/lxie/). During her studies, she performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). Her research interests include audio, music, and speech generation.
+Liumeng Xue is a Postdoctoral Researcher at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wie Xue](http://wei-xue.com/). Now, I'm working on audio, music, and speech generation and understanding.
+Before that, I performed postdoctoral research at The Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I was a co-founder of [Amphion](https://github.com/open-mmlab/Amphion), an open-source platform for Audio, Music, and Speech Generation.
+I received Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my studies, I performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). 
+My research interests include audio, speech and language processing, audio, music, and speech generation.
 
 
 # News
 <span class='anchor' id='news'></span>
-- Jun 13, 2024: [Multi-Level Temporal-Channel Speaker Retrieval for Zero-Shot Voice Conversion](https://ieeexplore.ieee.org/abstract/document/10542423) has been accepted and published by TASLP.
-- Jun 4, 2024: 3 papers ([WenetSpeech4TTS](https://arxiv.org/abs/2406.05763), [Single-Codec](https://www.arxiv.org/abs/2406.07422), [TACA-Audiobook](https://arxiv.org/abs/2406.05672)) are accepted by INTERSPEECH2024.
-- May 31, 2024: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) is launched.
-- Feb 28, 2024: [IEEE SLT workshop 2024](https://2024.ieeeslt.org) is announced.
-- Dec 18, 2023: [Amphion v0.1 ](https://arxiv.org/abs/2312.09911) is released. Amphion is an open-source platform for Audio, Music, and Speech Generation. 
-  - Built the fundamental framework to integrate various generative tasks into a unified pipeline, including data pre-processing, model building, training and inference, etc. [Github]((https://github.com/open-mmlab/Amphion))
-  - Led the reproduction of several typical TTS models and released the pre-trained models. [HuggingFace](https://huggingface.co/amphion)
-  - Developed and led the [SingVisio](https://arxiv.org/abs/2402.12660) project, an interactive visualization platform that makes the inner work mechanism of diffusion model easily understanble in the context of singing voice conversion. [Try it](https://dsvc.openmmlab.org.cn/).
+- [🎉 Party] Aug 30, 2024: [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2412.09911) is accepted by IEEE SLT 2024.
+- [🎉 Party] Aug 30, 2024: [Leveraging Diverse Semantic-based Audio Pretrained Models for Singing Voice Conversion](https://arxiv.org/abs/2310.11160) is accepted by IEEE SLT 2024.
+- [🎉 Party] Aug 20, 2024: [SingVisio](https://arxiv.org/abs/2402.12660) accepted by Computers & Graphics.
+- [🎉 Party] Jun 13, 2024: [Multi-Level Temporal-Channel Speaker Retrieval for Zero-Shot Voice Conversion](https://ieeexplore.ieee.org/abstract/document/10542423) has been accepted and published by TASLP.
+- [🎉 Party] Jun 4, 2024: 3 papers ([WenetSpeech4TTS](https://arxiv.org/abs/2406.05763), [Single-Codec](https://www.arxiv.org/abs/2406.07422), [TACA-Audiobook](https://arxiv.org/abs/2406.05672)) are accepted by INTERSPEECH2024.
+- [🎉 Party] May 31, 2024: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) is launched.
+- [🎉 Party]Feb 28, 2024: [IEEE SLT workshop 2024](https://2024.ieeeslt.org) is announced.
+- [🎉 Party]Dec 18, 2023: [Amphion v0.1 ](https://arxiv.org/abs/2312.09911) is released. Amphion is an open-source platform for Audio, Music, and Speech Generation. 
+  - I built the fundamental framework to integrate various generative tasks into a unified pipeline, including data pre-processing, model building, training and inference, etc. [Github]((https://github.com/open-mmlab/Amphion))
+  - I led the reproduction of several typical TTS models and released the pre-trained models. [HuggingFace](https://huggingface.co/amphion)
+  - I developed and led the [SingVisio](https://arxiv.org/abs/2402.12660) project, an interactive visualization platform that makes the inner work mechanism of diffusion model easily understanble in the context of singing voice conversion. [Try it](https://dsvc.openmmlab.org.cn/).
 
 <!-- - [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf) accepted by ICASSP2024, also integrated in [Amphion](https://github.com/open-mmlab/Amphion) 
 - [SponTTS: modeling and transferring spontaneous style for TTS](https://arxiv.org/pdf/2311.07179.pdf) accepted by ICASSP2024.
@@ -54,10 +60,10 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 # Research Experience
 <span class='anchor' id='research_experience'></span>
 
-- *2021.11 - 2022.10*, Research Intern, Microsoft, China.
-- *2021.06 - 2021.11*, Research Intern, Tencent AI Lab, China.
-- *2019.04 - 2020.06*, Research Intern, Microsoft, China.
-- *2018.10 - 2019.04*, Research Intern, JD.COM AI Lab, China.
+- *2021.11 - 2022.10*, Research Intern, Microsoft.
+- *2021.06 - 2021.11*, Research Intern, Tencent AI Lab.
+- *2019.04 - 2020.06*, Research Intern, Microsoft.
+- *2018.10 - 2019.04*, Research Intern, JD.COM AI Lab.
 
 
 # Selected Publications
@@ -65,6 +71,8 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 
 
 **Speech Synthesis/Text to Speech (TTS)**
+- [Amphion: An open-source audio, music and speech generation toolkit](https://arxiv.org/abs/2312.09911), Xueyao Zhang<sup>*</sup>, **Liumeng Xue**<sup>*</sup>, Yicheng Gu<sup>*</sup>, Yuancheng Wang<sup>*</sup>, Jiaqi Li<sup>*</sup>, Haorui He, Chaoren Wang, Songting Liu, Xi Chen, Junan Zhang, Zihao Fang, Haopeng Chen, Tze Ying Tang, Lexiao Zou, Mingxuan Wang, Jun Han, Kai Chen, Haizhou Li, Zhizheng Wu. **IEEE SLT**, 2024.
+
 - [Single-Codec: Single-Codebook Speech Codec towards High-Performance Speech Generation](https://www.arxiv.org/abs/2406.07422), Hanzhao Li, **Liumeng Xue**, Haohan Guo, Xinfa Zhu, Yuanjun Lv, Lei Xie. Yunlin Chen, Hao Yin, Zhifei Li.  **INTERSPEECH**, 2024.
   
 - [Text-aware and Context-aware Expressive Audiobook Speech Synthesis](https://arxiv.org/abs/2406.05672), Dake Guo, Xinfa Zhu, **Liumeng Xue**, Yongmao Zhang, Wenjie Tian, Lei Xie. **INTERSPEECH**, 2024.
@@ -90,7 +98,13 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 
 
 **Voice Conversion (VC)**
+- [Leveraging Diverse Semantic-based Audio Pretrained Models for Singing Voice Conversion](https://arxiv.org/abs/2310.11160), Xueyao Zhang, Zihao Fang, Yicheng Gu, Haopeng Chen, Lexiao Zou, Junan Zhang, **Liumeng Xue**, Zhizheng Wu, IEEE SLT 2024.
+
+- [SingVisio: Visual Analytics of Diffusion Model for Singing Voice Conversion](https://www.sciencedirect.com/science/article/abs/pii/S0097849324001936), **Liumeng Xue**, Chaoren Wang, Mingxuan Wang, Xueyao Zhang, Jun Han, Zhizheng Wu, Computers & Graphics, 2024
+
 - [Multi-level Temporal-channel Speaker Retrieval for Zero-shot Voice Conversion](https://arxiv.org/abs/2305.07204v2), Zhichao Wang, **Liumeng Xue**, Qiuqiang Kong, Lei Xie. Yuanzhe Chen, Qiao Tian, Yuping Wang, TASLP, 2024
+
+- [Transfer the linguistic representations from TTS to accent conversion with non-parallel data](https://arxiv.org/abs/2305.07204v2), Xi Chen, Jiakun Pei, **Liumeng Xue**, Mingyang Zhang, ICASSP, 2024
 
 - [Expressive-VC: Highly Expressive Voice Conversion with Attention Fusion of Bottleneck and Perturbation Features](https://ieeexplore.ieee.org/abstract/document/10096057), Ziqian Ning, Qicong Xie, Pengcheng Zhu, Zhichao Wang, **Liumeng Xue**, Jixun Yao, Lei Xie. Mengxiao Bi. **ICASSP**, 2023.
 
@@ -106,6 +120,7 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 
 **Vocoder**
 - [An Investigation of Time-Frequency Representation Discriminators for High-Fidelity Vocoder](https://arxiv.org/pdf/2404.17161), Yicheng Gu, Xueyao Zhang, **Liumeng Xue**, Haizhou Li, Zhizheng Wu, under review, 2024.
+
 - [Multi-Scale Sub-Band Constant-Q Transform Discriminator for High-Fidelity Vocoder](https://arxiv.org/pdf/2311.14957.pdf), Yicheng Gu, Xueyao Zhang, **Liumeng Xue**, Zhizheng Wu, **ICASSP**, 2024.
 
 
@@ -114,12 +129,10 @@ Liumeng Xue is a Postdoctoral Researcher at The Chinese University of Hong Kong,
 - [An Initial Investigation of Neural Replay Simulator for Over-the-Air Adversarial Perturbations to Automatic Speaker Verification](https://arxiv.org/pdf/2310.05354.pdf), Jiaqi Li, Li Wang, **Liumeng Xue**, Lei Wang, Zhizheng Wu, **ICASSP**, 2024.
 
 
-
 # Awards & Services
 <span class='anchor' id='others'></span>
-- Travel Grant: Interspeech 2022 
-- Invited Reviewer: TASLP, Speech Communication, NLP journal, ICASSP, INTERSPEECH, ICMC and ASRU, etc.
 - Conference Co-organizer: [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/)
 - Challenge Co-organizer: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) 
+- Invited Reviewer: IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ICASSP, INTERSPEECH, ASRU, SLT, ISCSLP, etc.
 
 

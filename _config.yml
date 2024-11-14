@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Liumeng Xue (薛浏蒙)"
-description              : "Postdoc researcher at The Chinese University of Hong Kong, Shenzhen"
+description              : "Postdoctoral researcher at Hong Kong University of Science and Technology"
 repository               : "lmxue.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,7 +24,7 @@ author:
   name             : "Liumeng Xue"
   avatar           : "images/photo.png"
   # bio              : "[Curriculum Vitae]"
-  # location         : "Shenzhen"
+  location         : "Hong Kong"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=KNqxVT0AAAAJ&hl=en"
