@@ -20,7 +20,7 @@ redirect_from:
 # About me
 <span class='anchor' id='about-me'></span>
 
-Liumeng Xue is a Postdoctoral Researcher at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wie Xue](http://wei-xue.com/). Now, I'm working on audio, music, and speech generation and understanding.
+Liumeng Xue is a Postdoctoral Researcher at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). Now, I'm working on audio, music, and speech generation and understanding.
 Before that, I performed postdoctoral research at The Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I was a co-founder of [Amphion](https://github.com/open-mmlab/Amphion), an open-source platform for Audio, Music, and Speech Generation.
 I received Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my studies, I performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). 
 My research interests include audio, speech and language processing, audio, music, and speech generation.
