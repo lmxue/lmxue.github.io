@@ -28,6 +28,11 @@ My research interests include audio, speech and language processing, audio, musi
 
 # News
 <span class='anchor' id='news'></span>
+- 🎉 Mar 19, 2025: [Invited talk about Audio-FLAN by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple team].
+- 🎉 Mar 3, 2025: [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/pdf/2503.01710?) is released. [GitHub](https://github.com/SparkAudio/Spark-TTS) [Demo](https://sparkaudio.github.io/spark-tts/)
+- 🎉 Feb 23, 2025: [Audio-FLAN](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset)
+- 🎉 Feb 6, 2025: [Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis](https://arxiv.org/pdf/2502.04128) is released. [GitHub](https://github.com/zhenye234/LLaSA_training) [Demo](https://llasatts.github.io/llasatts/)
+- 🎉 Jan 18, 2025: [YuE](https://arxiv.org/pdf/2503.08638?) is released. [GitHub](https://github.com/multimodal-art-projection/YuE) [Demo](https://map-yue.github.io/)
 - 🎉 Aug 30, 2024: [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2412.09911) is accepted by IEEE SLT 2024.
 - 🎉 Aug 30, 2024: [Leveraging Diverse Semantic-based Audio Pretrained Models for Singing Voice Conversion](https://arxiv.org/abs/2310.11160) is accepted by IEEE SLT 2024.
 - 🎉 Aug 20, 2024: [The ISCSLP 2024 Conversational Voice Clone (CoVoC) Challenge: Tasks, Results and Findings](https://arxiv.org/abs/2411.00064) is accepted by ISCSLP 2024.
@@ -73,11 +78,21 @@ My research interests include audio, speech and language processing, audio, musi
 # Selected Publications
 <span class='anchor' id='publication'></span>
 
+- [Audio-flan: A preliminary release](https://arxiv.org/pdf/2502.16584), **Liumeng Xue**, Ziya Zhou, Jiahao Pan, Zixuan Li, Shuai Fan, Yinghao Ma, Sitong Cheng, Dongchao Yang, Haohan Guo, Yujia Xiao, Xinsheng Wang, Zixuan Shen, Chuanbo Zhu, Xinshen Zhang, Tianchi Liu, Ruibin Yuan, Zeyue Tian, Haohe Liu, Emmanouil Benetos, Ge Zhang, Yike Guo, Wei Xue. 2025.
+
+- [Yue: Scaling open foundation models for long-form music generation](https://arxiv.org/pdf/2503.08638?), Ruibin Yuan, Hanfeng Lin, Shuyue Guo, Ge Zhang, ..., **Liumeng Xue**, Xingwei Qu, Yizhi Li, Shangda Wu, Tianhao Shen, Ziyang Ma, ..., Wei Xue, Xu Tan, Yike Guo. 2025.
+
+- [Spark-TTS: An efficient llm-based text-to-speech model with single-stream decoupled speech tokens](https://arxiv.org/pdf/2503.01710?), Xinsheng Wang, Mingqi Jiang, Ziyang Ma, ..., **Liumeng Xue**, ..., Xie Chen, Lei Xie, Yike Guo, Wei Xue. 2025.
+
+- [Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis](https://arxiv.org/pdf/2503.01710?), Zhen Ye, Xinfa Zhu, Chi-Min Chan, Xinsheng Wang, Xu Tan, ..., **Liumeng Xue**, ..., Yike Guo, Wei Xue. 2025.
+
+- [The ISCSLP 2024 Conversational Voice Clone (CoVoC) Challenge: Tasks, Results and Findings](https://arxiv.org/pdf/2411.00064), Kangxiang Xia, Dake Guo, Jixun Yao, Liumeng Xue, Hanzhao Li, Shuai Wang, Zhao Guo, Lei Xie, Qingqing Zhang, Lei Luo, Minghui Dong, Peng Sun. **ISCSLP**, 2025.
+
+- [SingVisio: Visual Analytics of Diffusion Model for Singing Voice Conversion](https://www.sciencedirect.com/science/article/abs/pii/S0097849324001936), **Liumeng Xue**, Chaoren Wang, Mingxuan Wang, Xueyao Zhang, Jun Han, Zhizheng Wu, Computers & Graphics, 2024
+
 - [Amphion: An open-source audio, music and speech generation toolkit](https://arxiv.org/abs/2312.09911), Xueyao Zhang<sup>*</sup>, **Liumeng Xue**<sup>*</sup>, Yicheng Gu<sup>*</sup>, Yuancheng Wang<sup>*</sup>, Jiaqi Li<sup>*</sup>, Haorui He, Chaoren Wang, Songting Liu, Xi Chen, Junan Zhang, Zihao Fang, Haopeng Chen, Tze Ying Tang, Lexiao Zou, Mingxuan Wang, Jun Han, Kai Chen, Haizhou Li, Zhizheng Wu. **IEEE SLT**, 2024.
 
 - [Leveraging Diverse Semantic-based Audio Pretrained Models for Singing Voice Conversion](https://arxiv.org/abs/2310.11160), Xueyao Zhang, Zihao Fang, Yicheng Gu, Haopeng Chen, Lexiao Zou, Junan Zhang, **Liumeng Xue**, Zhizheng Wu, IEEE SLT 2024.
-
-- [SingVisio: Visual Analytics of Diffusion Model for Singing Voice Conversion](https://www.sciencedirect.com/science/article/abs/pii/S0097849324001936), **Liumeng Xue**, Chaoren Wang, Mingxuan Wang, Xueyao Zhang, Jun Han, Zhizheng Wu, Computers & Graphics, 2024
 
 - [Multi-level Temporal-channel Speaker Retrieval for Zero-shot Voice Conversion](https://arxiv.org/abs/2305.07204v2), Zhichao Wang, **Liumeng Xue**, Qiuqiang Kong, Lei Xie. Yuanzhe Chen, Qiao Tian, Yuping Wang, TASLP, 2024
 
@@ -122,6 +137,6 @@ My research interests include audio, speech and language processing, audio, musi
 <span class='anchor' id='others'></span>
 - Conference Co-organizer: [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/)
 - Challenge Co-organizer: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) 
-- Invited Reviewer: IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ICASSP, INTERSPEECH, ASRU, SLT, ISCSLP, etc.
+- Invited Reviewer: IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ACMMM, ICASSP, INTERSPEECH, ASRU, SLT, ISCSLP, etc.
 
 
