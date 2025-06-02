@@ -28,7 +28,7 @@ My research interests include audio, speech and language processing, audio, musi
 
 # News
 <span class='anchor' id='news'></span>
-- 🎉 Mar 19, 2025: [Invited talk about Audio-FLAN by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple team].
+- 🎉 Mar 19, 2025: Invited talk about Audio-FLAN by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple team.
 - 🎉 Mar 3, 2025: [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/pdf/2503.01710?) is released. [GitHub](https://github.com/SparkAudio/Spark-TTS) [Demo](https://sparkaudio.github.io/spark-tts/)
 - 🎉 Feb 23, 2025: [Audio-FLAN](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset)
 - 🎉 Feb 6, 2025: [Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis](https://arxiv.org/pdf/2502.04128) is released. [GitHub](https://github.com/zhenye234/LLaSA_training) [Demo](https://llasatts.github.io/llasatts/)
