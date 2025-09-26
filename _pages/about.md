@@ -28,7 +28,7 @@ My research interests include audio, speech and language processing, audio, musi
 
 # News
 <span class='anchor' id='news'></span>
-- 🎉 Sep 26, 2025: [LLM4MA Workshop@ISMIR 2025]([https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en](https://m-a-p.ai/LLM4Music/)) is launched.
+- 🎉 Sep 26, 2025: [LLM4MA Workshop@ISMIR 2025](https://m-a-p.ai/LLM4Music/) is launched.
 - 🎉 Mar 19, 2025: Invited talk about Audio-FLAN by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple team.
 - 🎉 Mar 3, 2025: [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/pdf/2503.01710?) is released. [GitHub](https://github.com/SparkAudio/Spark-TTS) [Demo](https://sparkaudio.github.io/spark-tts/)
 - 🎉 Feb 23, 2025: [Audio-FLAN: An Instruction-Following Dataset for Unified Understanding and Generation of Speech, Music, and Sound](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset)
