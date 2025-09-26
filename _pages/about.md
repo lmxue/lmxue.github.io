@@ -28,11 +28,12 @@ My research interests include audio, speech and language processing, audio, musi
 
 # News
 <span class='anchor' id='news'></span>
+- 🎉 Sep 26, 2025: [LLM4MA Workshop@ISMIR 2025]([https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en](https://m-a-p.ai/LLM4Music/)) is launched.
 - 🎉 Mar 19, 2025: Invited talk about Audio-FLAN by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple team.
 - 🎉 Mar 3, 2025: [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/pdf/2503.01710?) is released. [GitHub](https://github.com/SparkAudio/Spark-TTS) [Demo](https://sparkaudio.github.io/spark-tts/)
-- 🎉 Feb 23, 2025: [Audio-FLAN](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset)
+- 🎉 Feb 23, 2025: [Audio-FLAN: An Instruction-Following Dataset for Unified Understanding and Generation of Speech, Music, and Sound](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset)
 - 🎉 Feb 6, 2025: [Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis](https://arxiv.org/pdf/2502.04128) is released. [GitHub](https://github.com/zhenye234/LLaSA_training) [Demo](https://llasatts.github.io/llasatts/)
-- 🎉 Jan 18, 2025: [YuE](https://arxiv.org/pdf/2503.08638?) is released. [GitHub](https://github.com/multimodal-art-projection/YuE) [Demo](https://map-yue.github.io/)
+- 🎉 Jan 18, 2025: [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://arxiv.org/pdf/2503.08638?) is released. [GitHub](https://github.com/multimodal-art-projection/YuE) [Demo](https://map-yue.github.io/)
 - 🎉 Aug 30, 2024: [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2412.09911) is accepted by IEEE SLT 2024.
 - 🎉 Aug 30, 2024: [Leveraging Diverse Semantic-based Audio Pretrained Models for Singing Voice Conversion](https://arxiv.org/abs/2310.11160) is accepted by IEEE SLT 2024.
 - 🎉 Aug 20, 2024: [The ISCSLP 2024 Conversational Voice Clone (CoVoC) Challenge: Tasks, Results and Findings](https://arxiv.org/abs/2411.00064) is accepted by ISCSLP 2024.
@@ -45,7 +46,7 @@ My research interests include audio, speech and language processing, audio, musi
   - I built the fundamental framework to integrate various generative tasks into a unified pipeline, including data pre-processing, model building, training and inference, etc. [Github](https://github.com/open-mmlab/Amphion)
   - I led the reproduction of several typical TTS models and released the pre-trained models. [HuggingFace](https://huggingface.co/amphion)
   - I developed and led the [SingVisio](https://arxiv.org/abs/2402.12660) project, an interactive visualization platform that makes the inner work mechanism of diffusion model easily understanble in the context of singing voice conversion. [Try it](https://dsvc.openmmlab.org.cn/).
-<!-- - 🎉 Aug 27, 2023: [IEEE SLT workshop 2024 proposals] is accepted.  -->
+<!-- - 🎉 Aug 27, 2023: [IEEE SLT workshop 2024 proposal] is accepted.  -->
 
 
 
