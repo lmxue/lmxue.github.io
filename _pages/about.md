@@ -9,11 +9,16 @@ redirect_from:
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" %}
+{% assign gsDataBaseUrl = gsDataBaseUrl | append: site.repository %}
+{% assign gsDataBaseUrl = gsDataBaseUrl | append: "@" %}
 {% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" %}
+{% assign gsDataBaseUrl = gsDataBaseUrl | append: site.repository %}
+{% assign gsDataBaseUrl = gsDataBaseUrl | append: "/" %}
 {% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+{% assign url = gsDataBaseUrl %}
+{% assign url = url | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 
 
@@ -139,5 +144,8 @@ My research interests include audio, speech and language processing, audio, musi
 - Conference Co-organizer: [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/)
 - Challenge Co-organizer: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) 
 - Invited Reviewer: IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ACMMM, ICASSP, INTERSPEECH, ASRU, SLT, ISCSLP, etc.
+
+
+{% include visitor-map.html %}
 
 

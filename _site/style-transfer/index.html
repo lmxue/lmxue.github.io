@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Audio samples from "A New Cycle Consistency Net for Cross-Speaker Style Transfer TTS Training"</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px 1px;
+      background: #fff;
+      color: #111;
+      font-size: 15px;
+      font-family: sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    audio {
+      width: 250px;
+      margin-right: 10px;
+    }
+
+    .sample {
+      font-size: 0.9em;
+      font-style: italic;
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    caption {
+      text-align: left;
+      font-size: 1.0em;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+<body>
+<div style="display: block; margin: 0 auto; width: 80%;">
+
+<div >
+  <h2 align="center"> Audio samples from "A New Cycle Consistency Net for Cross-Speaker Style Transfer TTS Training"</h2>
+<!--  <div><b>Paper: </b> <font size=3> <a href="https://arxiv.org/abs/1904.06063">arXiv</a></font></div>
+-->
+<!-- 	
+  <div><b>Authors:</b> <font size=3>Liumeng Xue<sup>1</sup>, Shifeng Pan<sup>2</sup>, Lei He<sup>2</sup>, Lei Xie<sup>1</sup>, Frank K. Soong<sup>2</sup> </font></div>
+  <div><font size=3>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>1</sup>Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi’an, China</font></div>
+  <div><font size=3>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Microsoft China </font></div>       
+-->  
+<div><b>Abstract:</b> <font size=3>In this paper, we propose a new cycle consistency network for training an end-to-end, cross-speaker style transfer TTS. Based upon an end-to-end, multi-speaker model where Variational Autoencoder (VAE) is used to learn the latent representation of the speaking style of speakers, we augment the training structure with unpaired style reference input and its transferred output, in addition to the paired style reference input and its output, to make the cross-speaker style transfer embeddings and the decoder more powerful. Additionally, a cycle consistency neural net is proposed to make training process tractable algorithmically. Testing results show that the proposed approach can perform much better than both the Global Style Token (GST) and VAE based models in cross-speaker style transfer, for either parallel or unparallel transfer. </font>
+<!--  <div><b> <font size=3>Paper accepted by INTERSPEECH 2019 </font></b></div> -->
+  </div>
+
+</div>
+<!--
+<blockquote>
+<table>
+<tr><td><img src="figures/mos.png" width=500></td></tr>
+<tr><td align=center>Figure 1. MOS values of different systems</td></tr>
+</table>
+</blockquote>
+-->
+<br>
+<hr>
+
+<h2 align="left">1. Parallel transfer </h3>
+<div style="height: 1100px">
+	 <blockquote> 
+     <table align="left">     
+      <caption align="left">(1). And these crystals are just like globes of light." </caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/sty_ref/0000000009.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/spk_ref/0000000009.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/gst/0000000009.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/vae/0000000009.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/cycle/0000000009.wav" controls=""></audio></td>
+      </tr>      
+    </table> 
+
+     <table align="left">     
+      <caption align="left">(2). But I mean to see where fate will lead me.' </caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/sty_ref/0000000016.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/spk_ref/0000000016.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/gst/0000000016.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/vae/0000000016.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/cycle/0000000016.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(3). 'Come along,' said Lawford, with a faint gust of laughter; 'let's see.'</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/sty_ref/0000000040.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/spk_ref/0000000040.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/gst/0000000040.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/vae/0000000040.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/cycle/0000000040.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(4). And he was eager to hear all that she could tell him.</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/sty_ref/0000000047.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/spk_ref/0000000047.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/gst/0000000047.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/vae/0000000047.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/cycle/0000000047.wav" controls=""></audio></td>
+      </tr>      
+    </table> 
+     <table align="left">     
+      <caption align="left">(5). He waved his hand gaily, and approached us along the road.</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/sty_ref/0000000038.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/spk_ref/0000000038.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/parallel/gst/0000000038.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/vae/0000000038.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/parallel/cycle/0000000038.wav" controls=""></audio></td>
+      </tr>      
+    </table> 
+
+	</blockquote>
+</div>
+<br>
+<h2 align="left">2. Unparallel transfer </h3>
+<div style="height: 1150px">
+	 <blockquote> 
+    <table align="left">
+      <caption align="left">(1). And these crystals are just like globes of light."</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/sty_ref/0000000010.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/spk_ref/0000000010.wav" controls=""></audio></td>
+      </tr>
+      <tr>      
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/gst/0000000010.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/vae/0000000010.wav" controls=""></audio></td>
+          <td align="center" width=550><audio src="samples/unparallel/cycle/0000000010.wav" controls=""></audio></td>
+      </tr>
+     </table>
+     <table align="left">     
+      <caption align="left">(2). "You know yourself why he'll come.</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/sty_ref/0000000021.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/spk_ref/0000000021.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/gst/0000000021.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/vae/0000000021.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/cycle/0000000021.wav" controls=""></audio></td>
+      </tr>      
+    </table>  
+     <table align="left">     
+      <caption align="left">(3). He's telling the whole truth, you may believe it."</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/sty_ref/0000000023.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/spk_ref/0000000023.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/gst/0000000023.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/vae/0000000023.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/cycle/0000000023.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(4). 'A week, seven days!'</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/sty_ref/0000000041.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/spk_ref/0000000041.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/gst/0000000041.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/vae/0000000041.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/cycle/0000000041.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+     <table align="left">     
+      <caption align="left">(5). They were trying to focus all fear and resentment on him.</caption>
+      <tr>      
+        <td align="center" width=450>Style reference audio</td>
+        <td align="center" width=450>Speaker reference audio</td>
+      </tr>   
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/sty_ref/0000000047.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/spk_ref/0000000047.wav" controls=""></audio></td>
+      </tr>
+      <tr>
+        <td align="center" width=450>GST baseline model</td>
+        <td align="center" width=450>VAE baseline model</td>
+        <td align="center" width=550>Proposed Cycle model</td>
+      </tr>
+      <tr>
+          <td align="center" width=400><audio src="samples/unparallel/gst/0000000047.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/vae/0000000047.wav" controls=""></audio></td>
+          <td align="center" width=400><audio src="samples/unparallel/cycle/0000000047.wav" controls=""></audio></td>
+      </tr>      
+    </table>
+	  </blockquote>
+</div>
+
+</body>
+</html>

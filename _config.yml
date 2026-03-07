@@ -70,6 +70,7 @@ exclude:
   - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - "*.bk.md"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
