@@ -146,6 +146,9 @@ My research interests include audio, speech and language processing, audio, musi
 - Invited Reviewer: IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ACMMM, ICASSP, INTERSPEECH, ASRU, SLT, ISCSLP, etc.
 
 
-{% include visitor-map.html %}
+{%- comment -%}
+Visitor map is temporarily hidden.
+{%- include visitor-map.html -%}
+{%- endcomment -%}
 
 

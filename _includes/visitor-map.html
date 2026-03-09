@@ -38,7 +38,7 @@
 <script>
 // Initialize map and visitor counter
 (function() {
-  var map, markers = [], currentView = 'global', userLocation = null, toggleBtn;
+  var map, markers = [], currentView = 'global', userLocation = null, toggleBtn, redIcon = null;
   
   // Wait for page to load
   if (document.readyState === 'loading') {
@@ -48,51 +48,74 @@
   }
   
   function initAll() {
-    // Visitor location data - each location represents one visitor
-    var visitorLocations = [
-      { lat: 22.3193, lng: 114.1694, city: 'Hong Kong' },
-      { lat: 39.9042, lng: 116.4074, city: 'Beijing' },
-      { lat: 40.7128, lng: -74.0060, city: 'New York' },
-      { lat: 51.5074, lng: -0.1278, city: 'London' },
-      { lat: 35.6762, lng: 139.6503, city: 'Tokyo' },
-      { lat: 37.7749, lng: -122.4194, city: 'San Francisco' },
-      { lat: 52.5200, lng: 13.4050, city: 'Berlin' },
-      { lat: -33.8688, lng: 151.2093, city: 'Sydney' }
-    ];
-    
-    // -------------------------------
-    // Visitor counter (auto-updating)
-    // -------------------------------
-    //
-    // 当前实现：使用 localStorage 做演示级统计，
-    // 每个浏览器每天只计一次，自动累加到 Total Visitors。
-    // 将来如果要接入真实统计服务（如 ClustrMaps / GA / 其他后端 API），
-    // 只需要在 try 块中用 fetch 请求真实总数并覆盖 counterElement.textContent 即可。
-    var counterElement = document.getElementById('counter-display');
-    if (counterElement) {
-      try {
-        var STORAGE_KEY_TOTAL = 'visitor_counter_total';
-        var STORAGE_KEY_LAST_VISIT = 'visitor_counter_last_visit';
+    // -----------------------------------
+    // 数据存储键名（localStorage）
+    // -----------------------------------
+    var STORAGE_KEY_LOCATIONS = 'visitor_counter_locations';
+    var STORAGE_KEY_LAST_VISIT = 'visitor_counter_last_visit';
 
-        var now = new Date();
-        var todayKey = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
-
-        var lastVisit = window.localStorage.getItem(STORAGE_KEY_LAST_VISIT);
-        var total = parseInt(window.localStorage.getItem(STORAGE_KEY_TOTAL) || '0', 10);
-
-        // 每个浏览器每天只计算一次访问
-        if (lastVisit !== todayKey) {
-          total += 1;
-          window.localStorage.setItem(STORAGE_KEY_TOTAL, String(total));
-          window.localStorage.setItem(STORAGE_KEY_LAST_VISIT, todayKey);
+    // -----------------------------------
+    // 1. 加载已记录的访客坐标（一个点 = 一个访客）
+    // -----------------------------------
+    var visitorLocations = [];
+    try {
+      var storedLocations = window.localStorage.getItem(STORAGE_KEY_LOCATIONS);
+      if (storedLocations) {
+        visitorLocations = JSON.parse(storedLocations) || [];
+        if (!Array.isArray(visitorLocations)) {
+          visitorLocations = [];
         }
+      }
+    } catch (e) {
+      visitorLocations = [];
+    }
 
-        counterElement.textContent = total;
-      } catch (e) {
-        // 如果浏览器不支持 / 禁用 localStorage，则退化为示例数据的个数
+    // 计数器 DOM
+    var counterElement = document.getElementById('counter-display');
+
+    function updateCounter() {
+      if (counterElement) {
         counterElement.textContent = visitorLocations.length;
       }
     }
+
+    function saveVisitorLocations() {
+      try {
+        window.localStorage.setItem(STORAGE_KEY_LOCATIONS, JSON.stringify(visitorLocations));
+      } catch (e) {
+        // ignore storage errors
+      }
+    }
+
+    // 注册一次新访客：写入坐标、更新 Total Visitors 和地图标记
+    function registerVisit(lat, lng) {
+      try {
+        var now = new Date();
+        var todayKey = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
+        var lastVisit = window.localStorage.getItem(STORAGE_KEY_LAST_VISIT);
+
+        // 同一浏览器每天只记录一次，避免刷新重复加 1
+        if (lastVisit === todayKey) {
+          return;
+        }
+
+        var newLocation = { lat: lat, lng: lng, city: '' };
+        visitorLocations.push(newLocation);
+        saveVisitorLocations();
+        window.localStorage.setItem(STORAGE_KEY_LAST_VISIT, todayKey);
+        addVisitorMarker(newLocation);
+        updateCounter();
+      } catch (e) {
+        // localStorage 不可用时，仅在当前会话内维护数据
+        var fallbackLocation = { lat: lat, lng: lng, city: '' };
+        visitorLocations.push(fallbackLocation);
+        addVisitorMarker(fallbackLocation);
+        updateCounter();
+      }
+    }
+
+    // 初始化计数器（与当前点的数量保持一致）
+    updateCounter();
     
     // Initialize map
     var mapContainer = document.getElementById('visitor-map');
@@ -101,17 +124,22 @@
     // Always start with global view
     initMap(visitorLocations);
     
-    // Try to get user's location for later use (but don't center on it initially)
+    // 获取用户位置并在首次访问当天打点 +1
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         function(position) {
           userLocation = [position.coords.latitude, position.coords.longitude];
+          registerVisit(position.coords.latitude, position.coords.longitude);
         },
         function(error) {
-          // Ignore errors
+          // 如果无法获取精确位置，则在 (0,0) 处打一个「未知位置」访客点
+          registerVisit(0, 0);
         },
         { timeout: 2000, enableHighAccuracy: false }
       );
+    } else {
+      // 不支持定位时，同样在 (0,0) 打点
+      registerVisit(0, 0);
     }
     
     function initMap(locations) {
@@ -135,23 +163,31 @@
       map.setView([0, 0], 1);
       
       // Create red marker icon
-      var redIcon = L.divIcon({
-        className: 'custom-marker',
-        html: '<div style="background-color: #ff4444; width: 6px; height: 6px; border-radius: 50%; border: 1px solid white; box-shadow: 0 1px 2px rgba(0,0,0,0.3);"></div>',
-        iconSize: [6, 6],
-        iconAnchor: [3, 3]
-      });
+      if (!redIcon) {
+        redIcon = L.divIcon({
+          className: 'custom-marker',
+          html: '<div style=\"background-color: #ff4444; width: 6px; height: 6px; border-radius: 50%; border: 1px solid white; box-shadow: 0 1px 2px rgba(0,0,0,0.3);\"></div>',
+          iconSize: [6, 6],
+          iconAnchor: [3, 3]
+        });
+      }
       
-      // Add visitor location markers
+      // Add existing visitor location markers
       locations.forEach(function(location) {
-        var marker = L.marker([location.lat, location.lng], { icon: redIcon })
-          .addTo(map)
-          .bindPopup('<strong>' + location.city + '</strong>');
-        markers.push(marker);
+        addVisitorMarker(location);
       });
       
       // Update button text
       updateButtonText();
+    }
+
+    // 在地图上添加一个访客标记
+    function addVisitorMarker(location) {
+      if (!map || !redIcon) return;
+      var marker = L.marker([location.lat, location.lng], { icon: redIcon })
+        .addTo(map)
+        .bindPopup(location.city ? '<strong>' + location.city + '</strong>' : 'Visitor');
+      markers.push(marker);
     }
     
     // Toggle view button handler
