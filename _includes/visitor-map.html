@@ -60,11 +60,38 @@
       { lat: -33.8688, lng: 151.2093, city: 'Sydney' }
     ];
     
-    // Update visitor counter
-    var totalVisitors = visitorLocations.length;
+    // -------------------------------
+    // Visitor counter (auto-updating)
+    // -------------------------------
+    //
+    // 当前实现：使用 localStorage 做演示级统计，
+    // 每个浏览器每天只计一次，自动累加到 Total Visitors。
+    // 将来如果要接入真实统计服务（如 ClustrMaps / GA / 其他后端 API），
+    // 只需要在 try 块中用 fetch 请求真实总数并覆盖 counterElement.textContent 即可。
     var counterElement = document.getElementById('counter-display');
     if (counterElement) {
-      counterElement.textContent = totalVisitors;
+      try {
+        var STORAGE_KEY_TOTAL = 'visitor_counter_total';
+        var STORAGE_KEY_LAST_VISIT = 'visitor_counter_last_visit';
+
+        var now = new Date();
+        var todayKey = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
+
+        var lastVisit = window.localStorage.getItem(STORAGE_KEY_LAST_VISIT);
+        var total = parseInt(window.localStorage.getItem(STORAGE_KEY_TOTAL) || '0', 10);
+
+        // 每个浏览器每天只计算一次访问
+        if (lastVisit !== todayKey) {
+          total += 1;
+          window.localStorage.setItem(STORAGE_KEY_TOTAL, String(total));
+          window.localStorage.setItem(STORAGE_KEY_LAST_VISIT, todayKey);
+        }
+
+        counterElement.textContent = total;
+      } catch (e) {
+        // 如果浏览器不支持 / 禁用 localStorage，则退化为示例数据的个数
+        counterElement.textContent = visitorLocations.length;
+      }
     }
     
     // Initialize map
