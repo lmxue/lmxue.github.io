@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Liumeng Xue (薛浏蒙)"
-description              : "Postdoctoral researcher at Hong Kong University of Science and Technology"
+description              : "Assistant Professor at Nanjing University"
 repository               : "lmxue.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,13 +24,13 @@ author:
   name             : "Liumeng Xue"
   avatar           : "images/photo.png"
   # bio              : "[Curriculum Vitae]"
-  location         : "Hong Kong"
+  location         : "Suzhou, Jiangsu, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=KNqxVT0AAAAJ&hl=en"
   email            : "xueliumeng@gmail.com"
-  email_nwpu       : "lmxue@nwpu-aslp.org"
-  email_org        : "lmxue@ust.hk"
+  # email_nwpu       : "lmxue@nwpu-aslp.org"
+  # email_org        : "lmxue@ust.hk"
   researchgate     : "https://www.researchgate.net/profile/Liumeng-Xue"
   uri              :
   bitbucket        :

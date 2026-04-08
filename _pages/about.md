@@ -24,10 +24,10 @@ redirect_from:
 
 # About me
 <span class='anchor' id='about-me'></span>
-I’m an Assistant Professor at the Nanjing University. 
+I’m an Assistant Professor at the [Nanjing University](https://is.nju.edu.cn/). 
 Previously, I obtained Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. After that, I worked as a Postdoc Fellow at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/); also worked as Postdoc Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). My research interests include audio, speech and language processing; speech, audio and music generation; emotional speech modeling and generation.
 
-# Hiring
+
 <strong style="color: red;">
 📢 I’m actively looking for self-motivated PhD students, Master students, and research interns. If you are interested in speech, music and audio generation, please feel free to contact me!
 </strong>
