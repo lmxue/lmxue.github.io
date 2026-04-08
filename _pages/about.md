@@ -24,15 +24,21 @@ redirect_from:
 
 # About me
 <span class='anchor' id='about-me'></span>
+I’m an Assistant Professor at the Nanjing University. 
+Previously, I obtained Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. After that, I worked as a Postdoc Fellow at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/); also worked as Postdoc Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). My research interests include audio, speech and language processing; speech, audio and music generation; emotional speech modeling and generation.
 
-Liumeng Xue is a Postdoctoral Researcher at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). Now, I'm working on audio, music, and speech generation and understanding.
-Before that, I performed postdoctoral research at The Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I was a co-founder of [Amphion](https://github.com/open-mmlab/Amphion), an open-source platform for Audio, Music, and Speech Generation.
-I received Ph.D. degree from the Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my studies, I performed research at JD AI Lab (2018-2019), Tencent AI Lab (2021-2022) and Microsoft (2019-2020, 2021-2022). 
-My research interests include audio, speech and language processing, audio, music, and speech generation.
+# Hiring
+<strong style="color: red;">
+📢 I’m actively looking for self-motivated PhD students, Master students, and research interns. If you are interested in speech, music and audio generation, please feel free to contact me!
+</strong>
 
 
 # News
 <span class='anchor' id='news'></span>
+- 🎉 Apr 8, 2026: [2nd Challenge and Workshop onMultilingual Conversational Speech Language Model（MLC-SLM）@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm) is launched.
+- 🎉 Apr 7, 2026: [S2S-Arena: Evaluating Paralinguistic Instruction Following in Speech-to-Speech Models](https://openreview.net/forum?id=Gfo02Re2VY) is accepted by ACL 2026.
+- 🎉 Jan 26, 2026: [AudioX: A Unified Framework for Anything-to-Audio Generation](https://zeyuet.github.io/AudioX/) and [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://map-yue.github.io/) are accepted by ICLR 2026.
+- 🎉 Jan 8, 2026: [SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing](https://ieeexplore.ieee.org/abstract/document/11346946/) is accepted by IEEE Journal of Selected Topics in Signal Processing.
 - 🎉 Sep 26, 2025: [LLM4MA Workshop@ISMIR 2025](https://m-a-p.ai/LLM4Music/) is launched.
 - 🎉 Mar 19, 2025: Invited talk about Audio-FLAN by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple team.
 - 🎉 Mar 3, 2025: [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/pdf/2503.01710?) is released. [GitHub](https://github.com/SparkAudio/Spark-TTS) [Demo](https://sparkaudio.github.io/spark-tts/)
@@ -47,7 +53,7 @@ My research interests include audio, speech and language processing, audio, musi
 - 🎉 Jun 4, 2024: [WenetSpeech4TTS](https://arxiv.org/abs/2406.05763), [Single-Codec](https://www.arxiv.org/abs/2406.07422), [TACA-Audiobook](https://arxiv.org/abs/2406.05672) are accepted by INTERSPEECH2024.
 - 🎉 May 31, 2024: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) is launched.
 - 🎉 Feb 28, 2024: [IEEE SLT workshop 2024](https://2024.ieeeslt.org) is announced.
-- 🎉 Dec 18, 2023: [Amphion](https://arxiv.org/abs/2312.09911) is released. Amphion is an open-source platform for Audio, Music, and Speech Generation. As a co-founder of Amphion,
+- 🎉 Dec 18, 2023: [Amphion](https://arxiv.org/abs/2312.09911) is released. Amphion is an open-source platform for Audio, Music, and Speech Generation. As a co-founder of [Amphion](https://github.com/open-mmlab/Amphion),
   - I built the fundamental framework to integrate various generative tasks into a unified pipeline, including data pre-processing, model building, training and inference, etc. [Github](https://github.com/open-mmlab/Amphion)
   - I led the reproduction of several typical TTS models and released the pre-trained models. [HuggingFace](https://huggingface.co/amphion)
   - I developed and led the [SingVisio](https://arxiv.org/abs/2402.12660) project, an interactive visualization platform that makes the inner work mechanism of diffusion model easily understanble in the context of singing voice conversion. [Try it](https://dsvc.openmmlab.org.cn/).
@@ -75,16 +81,16 @@ My research interests include audio, speech and language processing, audio, musi
 # Research Experience
 <span class='anchor' id='research_experience'></span>
 
-- *2021.11 - 2022.10*, Research Intern, Microsoft.
-- *2021.06 - 2021.11*, Research Intern, Tencent AI Lab.
-- *2019.04 - 2020.06*, Research Intern, Microsoft.
-- *2018.10 - 2019.04*, Research Intern, JD.COM AI Lab.
+- *2021.11 - 2022.10*, Researcher, Microsoft.
+- *2021.06 - 2021.11*, Researcher, Tencent AI Lab.
+- *2019.04 - 2020.06*, Researcher, Microsoft.
+- *2018.10 - 2019.04*, Researcher, JD.COM AI Lab.
 
 
 # Selected Publications
 <span class='anchor' id='publication'></span>
 
-- [Audio-flan: A preliminary release](https://arxiv.org/pdf/2502.16584), **Liumeng Xue**, Ziya Zhou, Jiahao Pan, Zixuan Li, Shuai Fan, Yinghao Ma, Sitong Cheng, Dongchao Yang, Haohan Guo, Yujia Xiao, Xinsheng Wang, Zixuan Shen, Chuanbo Zhu, Xinshen Zhang, Tianchi Liu, Ruibin Yuan, Zeyue Tian, Haohe Liu, Emmanouil Benetos, Ge Zhang, Yike Guo, Wei Xue. 2025.
+- [Audio-FLAN: A preliminary release](https://arxiv.org/pdf/2502.16584), **Liumeng Xue**, Ziya Zhou, Jiahao Pan, Zixuan Li, Shuai Fan, Yinghao Ma, Sitong Cheng, Dongchao Yang, Haohan Guo, Yujia Xiao, Xinsheng Wang, Zixuan Shen, Chuanbo Zhu, Xinshen Zhang, Tianchi Liu, Ruibin Yuan, Zeyue Tian, Haohe Liu, Emmanouil Benetos, Ge Zhang, Yike Guo, Wei Xue. 2025.
 
 - [Yue: Scaling open foundation models for long-form music generation](https://arxiv.org/pdf/2503.08638?), Ruibin Yuan, Hanfeng Lin, Shuyue Guo, Ge Zhang, ..., **Liumeng Xue**, Xingwei Qu, Yizhi Li, Shangda Wu, Tianhao Shen, Ziyang Ma, ..., Wei Xue, Xu Tan, Yike Guo. 2025.
 
