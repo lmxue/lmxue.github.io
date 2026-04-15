@@ -147,9 +147,9 @@ Previously, I obtained Ph.D. degree from Audio, Speech and Language Processing L
 - [Building a mixed-lingual neural TTS system with only monolingual data](https://www.isca-speech.org/archive/interspeech_2019/xue19_interspeech.html) **Liumeng Xue**, Wei Song, Guanghui Xu, Lei Xie. Zhizheng Wu. **INTERSPEECH** 2019
 # Awards & Services
 <span class='anchor' id='others'></span>
-- Conference Co-organizer: [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/)
-- Challenge Co-organizer: [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) 
-- Invited Reviewer: IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ACMMM, ICASSP, INTERSPEECH, ASRU, SLT, ISCSLP, etc.
+- Conference Co-organizer: [International Symposium on Chinese Spoken Language Processing 2026 (ISCSLP 2026)](https://speech.ee.ntu.edu.tw/ISCSLP2026/), [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/)
+- Challenge Co-organizer: [MLC-SLM@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm), [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) 
+- Invited Reviewer: ACL, ACM MM, ICASSP, INTERSPEECH, IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ASRU, SLT, ISCSLP, etc.
 
 
 {%- comment -%}
