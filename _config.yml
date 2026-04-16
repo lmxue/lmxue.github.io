@@ -11,6 +11,10 @@ description              : "Assistant Professor at Nanjing University"
 repository               : "lmxue.github.io"
 google_scholar_stats_use_cdn : true
 
+# Visitor map — get your free ID at https://clustrmaps.com (register your site URL)
+clustrmaps_id            : "wTnA9vb_Leyxbs-sCIsMq25Um_RWyguWIseJuDuRKQI"
+revolvermaps_id          :  # fallback: get ID at https://www.revolvermaps.com
+
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 

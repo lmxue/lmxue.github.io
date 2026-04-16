@@ -64,6 +64,7 @@ I committed to building open-source tools and data resources for the research co
   - I built the fundamental framework to integrate various generative tasks into a unified pipeline, including data pre-processing, model building, training and inference, etc. [Github](https://github.com/open-mmlab/Amphion)
   - I led the reproduction of several typical TTS models and released the pre-trained models. [HuggingFace](https://huggingface.co/amphion)
   - I developed and led the [SingVisio](https://arxiv.org/abs/2402.12660) project, an interactive visualization platform that makes the inner work mechanism of diffusion model easily understanble in the context of singing voice conversion. [Try it](https://dsvc.openmmlab.org.cn/).
+
 <!-- - 🎉 Aug 27, 2023: [IEEE SLT workshop 2024 proposal] is accepted.  -->
 
 
@@ -76,30 +77,48 @@ I committed to building open-source tools and data resources for the research co
 
 
 
-<!-- # 📜 Research Area
+ <!-- # 📜 Research Area
 <table style="border-collapse: collapse; border: none;">
   <tr style="border: none;">
     <td style="border: none;"> <font color="#0b5394"> Audio, speech and language processing </font>: <BR>&nbsp;&nbsp; Speech, audio and music generation</td>
     <td style="border: none;"> <font color="#0b5394"> Video Synthesize </font>: <BR>&nbsp;&nbsp; Talking Face Generation </td>
   </tr>
-</table> 
-
-
-
+</table>  -->
 
 
 # Research Experience
 <span class='anchor' id='research_experience'></span>
-- *2024.07 - 2026.03*, Postdoctoral Fellow, Hong Kong University of Science and Technology.
-- *2023.04 - 2024.06*, Postdoctoral Fellow, Chinese University of Hong Kong, Shenzhen.
+<!-- - *2024.07 - 2026.03*, Postdoctoral Fellow, Hong Kong University of Science and Technology.
+- *2023.04 - 2024.06*, Postdoctoral Fellow, Chinese University of Hong Kong, Shenzhen. -->
 - *2021.11 - 2022.10*, Researcher, Microsoft.
 - *2021.06 - 2021.11*, Researcher, Tencent AI Lab.
 - *2019.04 - 2020.06*, Researcher, Microsoft.
 - *2018.10 - 2019.04*, Researcher, JD.COM AI Lab.
 
 
+
+# Services
+<span class='anchor' id='others'></span>
+- Conference Co-organizer: [International Symposium on Chinese Spoken Language Processing 2026 (ISCSLP 2026)](https://speech.ee.ntu.edu.tw/ISCSLP2026/), [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/).
+- Challenge Co-organizer: [Multilingual Conversational Speech Language Model (MLC-SLM)@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm), [Conversational Voice Clone Challenge (CoVoC)@ISCSLP2024](https://www.magicdatatech.com/iscslp-2024).
+- Workshop Co-organizer: [Large Language Models for Music & Audio (LLM4MA) Workshop@ISMIR 2025](https://m-a-p.ai/LLM4Music/).
+- Invited Reviewer: ACL, ACM MM, ICASSP, INTERSPEECH, IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ASRU, SLT, ISCSLP, etc.
+
+
 # Selected Publications
 <span class='anchor' id='publication'></span>
+
+
+<!-- - [SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing]() -->
+
+<!-- - [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://arxiv.org/abs/2503.08638) -->
+
+- [AudioX: A Unified Framework for Anything-to-Audio Generation](https://arxiv.org/abs/2503.10522), Zeyue Tian, Zhaoyang Liu, Yizhu Jin, Ruibin Yuan, **Liumeng Xue**, Xu Tan, Qifeng Chen, Wei Xue, Yike Guo. 2026
+
+<!-- - sparktts -->
+<!-- - [Llasa: Scaling train-time and inference-time compute for llama-based speech synthesis](https://arxiv.org/pdf/2502.04128?) -->
+
+- [PodEval: A Multimodal Evaluation Framework for Podcast Audio Generation](https://arxiv.org/pdf/2510.00485?), Yujia Xiao, **Liumeng Xue** Lei He, Xinyi Chen, Aemon Yat Fei Chiu, Wenjie Tian, Shaofei Zhang, Qiuqiang Kong, Xinfa Zhu, Wei Xue, Tan Lee. 2025.
 
 - [Audio-FLAN: A preliminary release](https://arxiv.org/pdf/2502.16584), **Liumeng Xue**, Ziya Zhou, Jiahao Pan, Zixuan Li, Shuai Fan, Yinghao Ma, Sitong Cheng, Dongchao Yang, Haohan Guo, Yujia Xiao, Xinsheng Wang, Zixuan Shen, Chuanbo Zhu, Xinshen Zhang, Tianchi Liu, Ruibin Yuan, Zeyue Tian, Haohe Liu, Emmanouil Benetos, Ge Zhang, Yike Guo, Wei Xue. 2025.
 
@@ -156,12 +175,6 @@ I committed to building open-source tools and data resources for the research co
 
 <!-- **2009** -->
 - [Building a mixed-lingual neural TTS system with only monolingual data](https://www.isca-speech.org/archive/interspeech_2019/xue19_interspeech.html) **Liumeng Xue**, Wei Song, Guanghui Xu, Lei Xie. Zhizheng Wu. **INTERSPEECH** 2019
-# Awards & Services
-<span class='anchor' id='others'></span>
-- Conference Co-organizer: [International Symposium on Chinese Spoken Language Processing 2026 (ISCSLP 2026)](https://speech.ee.ntu.edu.tw/ISCSLP2026/), [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/)
-- Challenge Co-organizer: [MLC-SLM@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm), [Conversational Voice Clone Challenge (CoVoC)](https://www.magicdatatech.com/iscslp-2024) 
-- Invited Reviewer: ACL, ACM MM, ICASSP, INTERSPEECH, IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), Speech Processing Letters, Speech Communication, ASRU, SLT, ISCSLP, etc.
-
 
 {%- comment -%}
 Visitor map is temporarily hidden.
