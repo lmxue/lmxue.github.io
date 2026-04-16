@@ -77,13 +77,6 @@ I committed to building open-source tools and data resources for the research co
 
 
 
- <!-- # 📜 Research Area
-<table style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="border: none;"> <font color="#0b5394"> Audio, speech and language processing </font>: <BR>&nbsp;&nbsp; Speech, audio and music generation</td>
-    <td style="border: none;"> <font color="#0b5394"> Video Synthesize </font>: <BR>&nbsp;&nbsp; Talking Face Generation </td>
-  </tr>
-</table>  -->
 
 
 # Research Experience
@@ -174,9 +167,6 @@ I committed to building open-source tools and data resources for the research co
 <!-- **2009** -->
 - [Building a mixed-lingual neural TTS system with only monolingual data](https://www.isca-speech.org/archive/interspeech_2019/xue19_interspeech.html) **Liumeng Xue**, Wei Song, Guanghui Xu, Lei Xie. Zhizheng Wu. **INTERSPEECH** 2019
 
-{%- comment -%}
-Visitor map is temporarily hidden.
-{%- include visitor-map.html -%}
-{%- endcomment -%}
+{% include visitor-map.html %}
 
 

@@ -6,21 +6,11 @@ main:
   - title: "Recent News"
     url: "/#news"
 
-  - title: "Research Experiences"
+  - title: "Research Experience"
     url: "/#research_experience"
 
-  # - title: "Research"
-  #   url: "/#-research-area"
-
-  # - title: "Education"
-  #   url: "/#-education"
+  - title: "Services"
+    url: "/#others"
 
   - title: "Selected Publications"
     url: "/#publication"
-    
-  # - title: "Code"
-  #   url: "/#-open-source-code"
-    
-
-  - title: "Awards & Services"
-    url: "/#others"
