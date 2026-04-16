@@ -24,13 +24,20 @@ redirect_from:
 
 # About me
 <span class='anchor' id='about-me'></span>
-I’m an Assistant Professor at [Nanjing University](https://is.nju.edu.cn/). 
-Previously, I obtained Ph.D. degree from Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. After that, I worked as a Postdoc Fellow at Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). And I also worked as Postdoc Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). My research interests include audio, speech and language processing; speech, audio and music generation; emotional speech modeling and generation.
+I am currently an Assistant Professor at [Nanjing University](https://is.nju.edu.cn/). 
+Previously, I worked as a Postdoctoral Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). I also worked as a Postdoctoral Fellow at Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I obtained Ph.D. degree from Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. 
+
+My research interest mainly focuses on audio, speech and language processing; speech, audio and music understanding and generation; emotional and expressive speech generation; conversational AI; AI agents.
+
+I committed to building open-source tools and data resources for the research community, including [Amphion](https://github.com/open-mmlab/Amphion) for audio, music, and speech generation; [Audio-FLAN open-source instruction-following dataset for unified understanding and generation of speech, music, and sound](https://github.com/lmxue/Audio-FLAN); [WenetSpeech4TTS](https://arxiv.org/abs/2406.05763) open-source Mandarin dataset for speech generation. I have also contributed to research on large-scale generative models for speech, music, and audio, including [Llasa]((https://arxiv.org/pdf/2502.04128) ), Spark-TTS, [YuE](https://map-yue.github.io/), and [AudioX]((https://zeyuet.github.io/AudioX/)), etc.
+
+
+<!-- My research interests include audio, speech and language processing; speech, audio and music generation; emotional speech modeling and generation. -->
 
 
 <strong style="color: red;">
-📢 I’m actively looking for self-motivated PhD students, Master students, and research interns. If you are interested in speech, music and audio generation, please feel free to contact me!
-</strong>
+📢 I am actively recruiting self-motivated Ph.D. students, Master’s students, and research interns. If you are interested in my research or would like to explore related topics together, please feel free to reach out.
+</strong> -->
 
 
 # News
@@ -72,15 +79,19 @@ Previously, I obtained Ph.D. degree from Audio, Speech and Language Processing L
 <!-- # 📜 Research Area
 <table style="border-collapse: collapse; border: none;">
   <tr style="border: none;">
-    <td style="border: none;"> <font color="#0b5394"> Audio-Visual Speech Processing </font>: <BR>&nbsp;&nbsp; Audio-visual speech recognition; Sound Source localization</td>
+    <td style="border: none;"> <font color="#0b5394"> Audio, speech and language processing </font>: <BR>&nbsp;&nbsp; Speech, audio and music generation</td>
     <td style="border: none;"> <font color="#0b5394"> Video Synthesize </font>: <BR>&nbsp;&nbsp; Talking Face Generation </td>
   </tr>
-</table> -->
+</table> 
+
+
+
 
 
 # Research Experience
 <span class='anchor' id='research_experience'></span>
-
+- *2024.07 - 2026.03*, Postdoctoral Fellow, Hong Kong University of Science and Technology.
+- *2023.04 - 2024.06*, Postdoctoral Fellow, Chinese University of Hong Kong, Shenzhen.
 - *2021.11 - 2022.10*, Researcher, Microsoft.
 - *2021.06 - 2021.11*, Researcher, Tencent AI Lab.
 - *2019.04 - 2020.06*, Researcher, Microsoft.
