@@ -37,7 +37,7 @@ I committed to building open-source tools and data resources for the research co
 
 <strong style="color: red;">
 📢 I am actively recruiting self-motivated Ph.D. students, Master’s students, and research interns. If you are interested in my research or would like to explore related topics together, please feel free to reach out.
-</strong> -->
+</strong> 
 
 
 # News
