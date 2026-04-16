@@ -88,8 +88,6 @@ I committed to building open-source tools and data resources for the research co
 
 # Research Experience
 <span class='anchor' id='research_experience'></span>
-<!-- - *2024.07 - 2026.03*, Postdoctoral Fellow, Hong Kong University of Science and Technology.
-- *2023.04 - 2024.06*, Postdoctoral Fellow, Chinese University of Hong Kong, Shenzhen. -->
 - *2021.11 - 2022.10*, Researcher, Microsoft.
 - *2021.06 - 2021.11*, Researcher, Tencent AI Lab.
 - *2019.04 - 2020.06*, Researcher, Microsoft.
