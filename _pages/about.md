@@ -88,7 +88,7 @@ I committed to building open-source tools and data resources for the research co
 
 
 
-# Services
+# Academic Activities
 <span class='anchor' id='others'></span>
 - Conference Co-organizer: [International Symposium on Chinese Spoken Language Processing 2026 (ISCSLP 2026)](https://speech.ee.ntu.edu.tw/ISCSLP2026/), [IEEE Spoken Language Technology Workshop 2024 (IEEE SLT workshop 2024)](https://2024.ieeeslt.org/).
 - Challenge Co-organizer: [Multilingual Conversational Speech Language Model (MLC-SLM)@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm), [Conversational Voice Clone Challenge (CoVoC)@ISCSLP2024](https://www.magicdatatech.com/iscslp-2024).
