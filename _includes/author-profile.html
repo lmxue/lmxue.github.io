@@ -141,12 +141,9 @@
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
-      {% if author.email_nwpu %}
-        <li><a href="mailto:{{ author.email_nwpu }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> qianxy@ustb.edu.cn</a></li>
-      {% endif %}
       {% if author.email_org %}
-        <li><a href="mailto:{{ author.email_org }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> qianxy@ustb.edu.cn</a></li>
-      {% endif %}      
+        <a href="mailto:{{ author.email_org }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
+      {% endif %}
       {% if author.googlescholar %}
         <a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i></a>
       {% endif %}      
