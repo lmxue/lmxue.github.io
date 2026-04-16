@@ -42,7 +42,7 @@ I committed to building open-source tools and data resources for the research co
 
 # News
 <span class='anchor' id='news'></span>
-- 🎉 Apr 8, 2026: [2nd Challenge and Workshop onMultilingual Conversational Speech Language Model (MLC-SLM)@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm) is launched.
+- 🎉 Apr 8, 2026: [2nd Challenge and Workshop on Multilingual Conversational Speech Language Model (MLC-SLM)@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm) is launched.
 - 🎉 Apr 7, 2026: [S2S-Arena: Evaluating Paralinguistic Instruction Following in Speech-to-Speech Models](https://openreview.net/forum?id=Gfo02Re2VY) is accepted by ACL 2026.
 - 🎉 Jan 26, 2026: [AudioX: A Unified Framework for Anything-to-Audio Generation](https://zeyuet.github.io/AudioX/) and [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://map-yue.github.io/) are accepted by ICLR 2026.
 - 🎉 Jan 8, 2026: [SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing](https://ieeexplore.ieee.org/abstract/document/11346946/) is accepted by IEEE Journal of Selected Topics in Signal Processing.
