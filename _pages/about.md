@@ -24,7 +24,7 @@ redirect_from:
 
 # About me
 <span class='anchor' id='about-me'></span>
-I am currently an Assistant Professor at [Nanjing University](https://is.nju.edu.cn/). 
+I am currently an Assistant Professor at [Nanjing University](https://is.nju.edu.cn/xlm/main.htm). 
 Previously, I worked as a Postdoctoral Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). I also worked as a Postdoctoral Fellow at Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I obtained Ph.D. degree from Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. 
 
 My research interest mainly focuses on audio, speech and language processing; speech, audio and music understanding and generation; emotional and expressive speech generation; conversational AI; AI agents.
