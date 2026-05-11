@@ -24,8 +24,8 @@ redirect_from:
 
 # About me
 <span class='anchor' id='about-me'></span>
-I am currently an Assistant Professor at [Nanjing University](https://is.nju.edu.cn/xlm/main.htm). 
-Previously, I worked as a Postdoctoral Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). I also worked as a Postdoctoral Fellow at Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I obtained Ph.D. degree from Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.npu-aslp.org/english)), supervised by Prof.[Lei Xie](http://www.nwpu-aslp.org/lxie/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. 
+I am currently an Assistant Professor at [Nanjing University](https://is.nju.edu.cn/xlm_en/main.htm). 
+Previously, I worked as a Postdoctoral Fellow at Hong Kong University of Science and Technology, working with Prof.[Yike Guo](https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo) and Prof.[Wei Xue](http://wei-xue.com/). I also worked as a Postdoctoral Fellow at Chinese University of Hong Kong, Shenzhen (CUHK-SZ), working with Prof.[Haizhou Li](https://colips.org/~eleliha/) and Prof.[Zhizheng Wu](https://drwuz.com/). I obtained Ph.D. degree from Audio, Speech and Language Processing Laboratory at Northwestern Polytechnical University ([ASLP@NWPU](http://www.nwpu-aslp.org/)), supervised by Prof.[Lei Xie](https://lxie.npu-aslp.org/). During my Ph.D. studies, I performed research at JD AI Lab, Tencent AI Lab and Microsoft. 
 
 My research interest mainly focuses on audio, speech and language processing; speech, audio and music understanding and generation; emotional and expressive speech generation; conversational AI; AI agents.
 
@@ -42,7 +42,7 @@ I committed to building open-source tools and data resources for the research co
 
 # News
 <span class='anchor' id='news'></span>
-- 🎉 Apr 13, 2026: [The 15th International Symposium on Chinese Spoken Language Processing (ISCSLP 2026)](https://speech.ee.ntu.edu.tw/) is launched.
+- 🎉 Apr 13, 2026: [The 15th International Symposium on Chinese Spoken Language Processing (ISCSLP 2026)](https://iscslp.org/2026/) is launched.
 - 🎉 Apr 8, 2026: [2nd Challenge and Workshop on Multilingual Conversational Speech Language Model (MLC-SLM)@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm) is launched.
 - 🎉 Apr 7, 2026: [S2S-Arena: Evaluating Paralinguistic Instruction Following in Speech-to-Speech Models](https://openreview.net/forum?id=Gfo02Re2VY) is accepted by ACL 2026.
 - 🎉 Jan 26, 2026: [AudioX: A Unified Framework for Anything-to-Audio Generation](https://zeyuet.github.io/AudioX/) and [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://map-yue.github.io/) are accepted by ICLR 2026.
