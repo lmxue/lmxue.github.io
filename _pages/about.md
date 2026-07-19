@@ -42,6 +42,9 @@ I committed to building open-source tools and data resources for the research co
 
 # News
 <span class='anchor' id='news'></span>
+- 🎉 July 17, 2026: [MINT-Bench: A Comprehensive Multilingual Benchmark for Instruction-Following Text-to-Speech](https://arxiv.org/abs/2604.17958) and [PodEval: A Multimodal Evaluation Framework for Podcast Audio Generation](https://arxiv.org/pdf/2510.00485?) were accepted to ACM MM 2026.
+- 🎉 Jun 15, 2026: [NVVSpeech Challenge@ISCSLP 2026](https://nvvspeech-challenge.github.io/) has launched.
+- 🎉 Jun 4, 2026: [NVV-SuperBench](https://arxiv.org/pdf/2604.16211) was accepted to INTERSPEECH 2026 as a long paper.
 - 🎉 Apr 13, 2026: [The 15th International Symposium on Chinese Spoken Language Processing (ISCSLP 2026)](https://iscslp.org/2026/) is launched.
 - 🎉 Apr 8, 2026: [2nd Challenge and Workshop on Multilingual Conversational Speech Language Model (MLC-SLM)@INTERSPEECH2026](https://www.nexdata.ai/competition/mlc-slm) is launched.
 - 🎉 Apr 7, 2026: [S2S-Arena: Evaluating Paralinguistic Instruction Following in Speech-to-Speech Models](https://openreview.net/forum?id=Gfo02Re2VY) is accepted by ACL 2026.
@@ -50,7 +53,7 @@ I committed to building open-source tools and data resources for the research co
 - 🎉 Sep 26, 2025: [LLM4MA Workshop@ISMIR 2025](https://m-a-p.ai/LLM4Music/) is launched.
 - 🎉 Mar 19, 2025: Invited by [Josh Gardner](https://scholar.google.com/citations?user=SSq1t_YAAAAJ&hl=en) from Apple to give a talk on [Audio-FLAN](https://github.com/lmxue/Audio-FLAN).
 - 🎉 Mar 3, 2025: [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/pdf/2503.01710?) is released. [GitHub](https://github.com/SparkAudio/Spark-TTS) [Demo](https://sparkaudio.github.io/spark-tts/)
-- 🎉 Feb 23, 2025: [Audio-FLAN: An Instruction-Following Dataset for Unified Understanding and Generation of Speech, Music, and Sound](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset)
+- 🎉 Feb 23, 2025: [Audio-FLAN: An Instruction-Following Dataset for Unified Understanding and Generation of Speech, Music, and Sound](https://arxiv.org/pdf/2502.16584) is released. [GitHub](https://github.com/lmxue/Audio-FLAN) [HuggingFace](https://huggingface.co/datasets/HKUSTAudio/Audio-FLAN-Dataset) [Selected as one of the Best Audio Papers of 2025](https://cslikai.cn/Best-Audio-Paper-2025/)
 - 🎉 Feb 6, 2025: [Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis](https://arxiv.org/pdf/2502.04128) is released. [GitHub](https://github.com/zhenye234/LLaSA_training) [Demo](https://llasatts.github.io/llasatts/)
 - 🎉 Jan 18, 2025: [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://arxiv.org/pdf/2503.08638?) is released. [GitHub](https://github.com/multimodal-art-projection/YuE) [Demo](https://map-yue.github.io/)
 - 🎉 Aug 30, 2024: [Amphion: An Open-Source Audio, Music and Speech Generation Toolkit](https://arxiv.org/abs/2412.09911) is accepted by IEEE SLT 2024.
